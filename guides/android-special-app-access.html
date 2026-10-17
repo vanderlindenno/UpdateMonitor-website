@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Special app access on Android explained: the 7 most powerful permissions | UpdateMonitor</title>
+  <meta name="description" content="Accessibility, display over other apps, notification access, all files access, install unknown apps, usage access and device admin apps on Android: what they allow and where to check them.">
+  <link rel="canonical" href="https://updatemonitor.app/guides/android-special-app-access.html">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta name="theme-color" content="#283593">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Special app access on Android explained: the 7 most powerful permissions">
+  <meta property="og:description" content="Accessibility, display over other apps, notification access, all files access, install unknown apps, usage access and device admin apps on Android: what they allow and where to check them.">
+  <meta property="og:url" content="https://updatemonitor.app/guides/android-special-app-access.html">
+  <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Special app access on Android explained: the 7 most powerful permissions",
+    "description": "Accessibility, display over other apps, notification access, all files access, install unknown apps, usage access and device admin apps on Android: what they allow and where to check them.",
+    "image": "https://updatemonitor.app/img/og-image.png",
+    "datePublished": "2026-10-17",
+    "dateModified": "2026-10-17",
+    "mainEntityOfPage": "https://updatemonitor.app/guides/android-special-app-access.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Nordic Appworks"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nordic Appworks"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "UpdateMonitor",
+        "item": "https://updatemonitor.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://updatemonitor.app/guides/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Special app access explained",
+        "item": "https://updatemonitor.app/guides/android-special-app-access.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which special access is the most dangerous?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Accessibility. An app with accessibility access can read your screen and act for you, which is why banking malware and stalkerware ask for it. Only screen readers and real assistive tools should have it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can't I uninstall an app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It may be registered as a device admin app. Deactivate it under Settings → Security & privacy → Device admin apps, then uninstall it. On a company phone, check with your IT department first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is “Display over other apps” always bad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Chat bubbles, screen-dimming apps and some navigation apps use it legitimately. It's a concern when an app has no clear reason to show anything on top of other apps."
+        }
+      }
+    ]
+  }
+]
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Which apps can use your camera, microphone or location?",
+    "description": "The Permissions tab: every kind of access, which apps really have it, and since when.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-2.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT50S",
+    "contentUrl": "https://youtube.com/shorts/-YNwwlB9cz0",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/-YNwwlB9cz0"
+  }
+]
+  </script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-play" viewBox="0 0 24 24"><path d="M8,5v14l11,-7z"/></symbol><symbol id="i-storage" viewBox="0 0 24 24"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></symbol><symbol id="i-location" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></symbol><symbol id="i-warning" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></symbol><symbol id="i-update" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"/></symbol><symbol id="i-business" viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></symbol><symbol id="i-cross" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></symbol><symbol id="i-accessibility" viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></symbol><symbol id="i-delete" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></symbol><symbol id="i-camera" viewBox="0 0 24 24"><path d="M12 15.2A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></symbol></svg>
+
+<main class="container">
+  <article class="card guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">UpdateMonitor</a> › <a href="./">Guides</a></nav>
+    <div class="guide-head"><svg class="icon guide-icon" aria-hidden="true"><use href="#i-lock"/></svg><h1>Special app access on Android explained: the 7 most powerful permissions</h1></div>
+    <p class="tagline">Some access is so powerful that Android keeps it out of the normal permission screens. What each one does, and when to worry.</p>
+    <p class="meta">Updated 17 October 2026</p>
+
+<p>Camera, microphone and location are the permissions most people know. But the access that can do the most harm is in a separate place: <strong>special app access</strong>. These are switches you turn on by hand in Settings, and stalkerware, banking malware and scam apps rely on them.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-lock"/></svg>The 7 kinds of special access</h2>
+<div class="access-list">
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-accessibility"/></svg><div><h3>Accessibility</h3><p>Can read everything on your screen, including messages and passwords as you type them, and tap buttons for you. Meant for screen readers and assistive tools. <span class="risk high">Highest risk</span></p><p class="where"><span class="path">Settings › Accessibility › Installed apps</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-bell"/></svg><div><h3>Notification access</h3><p>Can read all your notifications – including messages and one-time login codes – and dismiss them. Used by smartwatches and car apps. <span class="risk high">High risk</span></p><p class="where"><span class="path">Settings › Apps › Special app access › Notification access</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-layers"/></svg><div><h3>Display over other apps</h3><p>Can draw on top of other apps: chat bubbles, but also a fake login screen over your banking app. <span class="risk high">High risk</span></p><p class="where"><span class="path">Settings › Apps › Special app access › Display over other apps</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-download"/></svg><div><h3>Install unknown apps</h3><p>Can install other apps from outside the Play Store. Browsers, file managers and chat apps often ask for it. <span class="risk medium">Medium risk</span></p><p class="where"><span class="path">Settings › Apps › Special app access › Install unknown apps</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-folder"/></svg><div><h3>All files access</h3><p>Can read, change and delete every file on your phone's shared storage: photos, downloads, documents. <span class="risk medium">Medium risk</span></p><p class="where"><span class="path">Settings › Apps › Special app access › All files access</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-chart"/></svg><div><h3>Usage access</h3><p>Can see which apps you use, when and for how long. Used by screen-time and battery apps. <span class="risk medium">Medium risk</span></p><p class="where"><span class="path">Settings › Apps › Special app access › Usage access</span></p></div></div>
+  <div class="access"><svg class="icon access-icon" aria-hidden="true"><use href="#i-shield"/></svg><div><h3>Device admin apps</h3><p>Can lock the phone, change the screen lock or erase all data, and is harder to uninstall. Used by work-profile and find-my-device apps. <span class="risk high">High risk</span></p><p class="where"><span class="path">Settings › Security & privacy › Device admin apps</span></p></div></div>
+</div>
+<p class="note">Menu names differ a little per brand and Android version. If you can't find a screen, use the search field at the top of Settings and type its name, for example “special app access”.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-warning"/></svg>Warning signs</h2>
+<ul class="checks warn"><li><svg class="icon" aria-hidden="true"><use href="#i-warning"/></svg><span>An app you don't recognise with accessibility or notification access.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-warning"/></svg><span>A game, wallpaper or “phone cleaner” with any of these switches turned on.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-warning"/></svg><span>An app that asks you to turn on accessibility “to work properly”, while it has nothing to do with accessibility.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-warning"/></svg><span>A device admin app you didn't add yourself, especially on a phone you bought second-hand or got from someone else.</span></li></ul>
+<p>Android 13 and later blocks accessibility and notification access for many apps installed from outside an app store (<em>restricted settings</em>). If an app asks you to work around that, be extra careful – see <a href="is-it-safe-to-install-apk.html">is it safe to install an APK?</a></p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-eye"/></svg>All special access on one screen</h2>
+<figure class="shot shot-right"><picture><source srcset="../img/guide-special-access.webp" type="image/webp"><img src="../img/guide-special-access.png" width="480" height="1066" alt="UpdateMonitor Permissions tab, Special access section with accessibility highlighted" loading="lazy" decoding="async"></picture><figcaption>UpdateMonitor lists special access next to the normal permissions, with accessibility highlighted.</figcaption></figure>
+<p>Android spreads these switches over several menus. UpdateMonitor's <strong>Permissions</strong> tab puts them together under <strong>Special access</strong>, shows which apps have each one and since when, and takes you to the right Android screen with one tap. Accessibility is highlighted because it's the most powerful of all.</p>
+<p>To turn access off, open the Android screen, tap the app and switch it off. For device admin apps, deactivate the app there first; after that you can uninstall it normally.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+  <details><summary>Which special access is the most dangerous?</summary><p>Accessibility. An app with accessibility access can read your screen and act for you, which is why banking malware and stalkerware ask for it. Only screen readers and real assistive tools should have it.</p></details>
+  <details><summary>Why can&#x27;t I uninstall an app?</summary><p>It may be registered as a device admin app. Deactivate it under Settings → Security &amp; privacy → Device admin apps, then uninstall it. On a company phone, check with your IT department first.</p></details>
+  <details><summary>Is “Display over other apps” always bad?</summary><p>No. Chat bubbles, screen-dimming apps and some navigation apps use it legitimately. It&#x27;s a concern when an app has no clear reason to show anything on top of other apps.</p></details>
+</div>
+
+    <section class="video-block">
+      <div class="video-text">
+        <h2>Watch: Which apps can use your camera, microphone or location?</h2>
+        <p>The Permissions tab: every kind of access, which apps really have it, and since when. About a minute, with captions.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/-YNwwlB9cz0" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Watch on YouTube</a>
+      </div>
+      <div class="yt" data-id="-YNwwlB9cz0" data-title="Which apps can use your camera, microphone or location?"><button type="button" aria-label="Play the video: Which apps can use your camera, microphone or location?"><picture><source srcset="../img/video-2.webp" type="image/webp"><img src="../img/video-2.jpg" width="540" height="960" alt="Which apps can use your camera, microphone or location?" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+    </section>
+    <div class="cta">
+      <h2>UpdateMonitor – free for Android</h2>
+      <p>All permissions and special access on one screen, with the date each app got it – and nothing ever leaves your phone.</p>
+      <p><a class="play-btn" href="../">See how it works</a></p>
+    </div>
+  </article>
+
+  <section class="card related">
+    <h2>Related guides</h2>
+    <div class="related-grid">
+      <a class="related-card" href="android-app-permissions.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-eye"/></svg><span>Which apps can use your camera, microphone or location</span></a>
+      <a class="related-card" href="is-it-safe-to-install-apk.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-file"/></svg><span>Is it safe to install an APK?</span></a>
+      <a class="related-card" href="apps-using-location-in-background.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-location"/></svg><span>Apps that use your location in the background</span></a>
+    </div>
+    <p class="all-guides"><a href="./">All guides →</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>© 2026 Nordic Appworks • UpdateMonitor</div>
+  <nav>
+    <a href=".././">Home</a>
+    <a href="../guides/">Guides</a>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href=".././#support">Support</a>
+    <a href=".././#contact">Contact</a>
+    <a href="https://rebootmonitor.com/">RebootMonitor</a>
+    <a href="../no/" hreflang="nb" lang="nb">Norsk</a>
+  </nav>
+</footer>
+<script>
+  // Load the YouTube player only after a click (youtube-nocookie); a local file: page opens YouTube instead
+  document.querySelectorAll(".yt").forEach(function (box) {
+    var button = box.querySelector("button");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var id = box.getAttribute("data-id");
+      if (location.protocol === "file:") { window.open("https://youtube.com/shorts/" + id, "_blank", "noopener"); return; }
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = box.getAttribute("data-title");
+      frame.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      box.replaceChildren(frame);
+    });
+  });
+</script>
+</body>
+</html>

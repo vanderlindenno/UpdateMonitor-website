@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to turn automatic app updates off (or on) on Android | UpdateMonitor</title>
+  <meta name="description" content="How to turn automatic app updates off or on in the Google Play Store, for all apps or one app, update only over Wi-Fi, and the pros and cons of each choice.">
+  <link rel="canonical" href="https://updatemonitor.app/guides/turn-off-auto-updates-android.html">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta name="theme-color" content="#283593">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to turn automatic app updates off (or on) on Android">
+  <meta property="og:description" content="How to turn automatic app updates off or on in the Google Play Store, for all apps or one app, update only over Wi-Fi, and the pros and cons of each choice.">
+  <meta property="og:url" content="https://updatemonitor.app/guides/turn-off-auto-updates-android.html">
+  <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to turn automatic app updates off (or on) on Android",
+    "description": "How to turn automatic app updates off or on in the Google Play Store, for all apps or one app, update only over Wi-Fi, and the pros and cons of each choice.",
+    "image": "https://updatemonitor.app/img/og-image.png",
+    "datePublished": "2026-10-17",
+    "dateModified": "2026-10-17",
+    "mainEntityOfPage": "https://updatemonitor.app/guides/turn-off-auto-updates-android.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Nordic Appworks"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nordic Appworks"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "UpdateMonitor",
+        "item": "https://updatemonitor.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://updatemonitor.app/guides/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Turn automatic app updates off or on",
+        "item": "https://updatemonitor.app/guides/turn-off-auto-updates-android.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it safe to turn off automatic app updates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It's safe as long as you still update regularly by hand. Apps that stay on an old version miss security fixes, so turning updates off for everything isn't recommended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are my apps updating even though I turned auto-update off?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some apps are updated by another store, such as the Galaxy Store on Samsung phones, and Google Play system components update separately. Check the settings of each store."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I go back to an older version of an app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For apps from the Play Store, usually not. Only preinstalled system apps can be reset with “Uninstall updates” in Settings → Apps. Turning off auto-update for that app prevents the next change."
+        }
+      }
+    ]
+  }
+]
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "UpdateMonitor in 1 minute",
+    "description": "A quick tour: the history per day, older updates, the calendar, filters and export.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-1.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M12S",
+    "contentUrl": "https://youtube.com/shorts/0LE4vzGjj98",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/0LE4vzGjj98"
+  }
+]
+  </script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-play" viewBox="0 0 24 24"><path d="M8,5v14l11,-7z"/></symbol><symbol id="i-storage" viewBox="0 0 24 24"><path d="M2 20h20v-4H2v4zm2-3h2v2H4v-2zM2 4v4h20V4H2zm4 3H4V5h2v2zm-4 7h20v-4H2v4zm2-3h2v2H4v-2z"/></symbol><symbol id="i-location" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></symbol><symbol id="i-warning" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></symbol><symbol id="i-update" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"/></symbol><symbol id="i-business" viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></symbol><symbol id="i-cross" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></symbol><symbol id="i-accessibility" viewBox="0 0 24 24"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></symbol><symbol id="i-delete" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></symbol><symbol id="i-camera" viewBox="0 0 24 24"><path d="M12 15.2A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></symbol></svg>
+
+<main class="container">
+  <article class="card guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../">UpdateMonitor</a> › <a href="./">Guides</a></nav>
+    <div class="guide-head"><svg class="icon guide-icon" aria-hidden="true"><use href="#i-update"/></svg><h1>How to turn automatic app updates off (or on) on Android</h1></div>
+    <p class="tagline">Update everything automatically, only on Wi-Fi, or app by app? How to set it up – and what you give up.</p>
+    <p class="meta">Updated 17 October 2026</p>
+
+<p>By default the Play Store updates your apps in the background. Usually that's what you want: updates fix bugs and security problems. But sometimes you want to keep an app as it is, save mobile data, or simply know what changes.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-update"/></svg>For all apps</h2>
+<ol class="steps">
+  <li>Open the <strong>Play Store</strong> and tap your <strong>profile icon</strong> at the top right.</li>
+  <li>Go to <span class="path">Settings › Network preferences › Auto-update apps</span>.</li>
+  <li>Choose one of three options:
+    <ul>
+      <li><strong>Over any network</strong> – Wi-Fi and mobile data.</li>
+      <li><strong>Over Wi-Fi only</strong> – recommended for most people.</li>
+      <li><strong>Don't auto-update apps</strong> – you update everything by hand.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-phone"/></svg>For one app only</h2>
+<ol class="steps">
+  <li>Open the app's page in the Play Store.</li>
+  <li>Tap the <strong>⋮</strong> menu at the top right.</li>
+  <li>Untick <strong>Enable auto update</strong>.</li>
+</ol>
+<p class="note">Samsung phones have a second store, the <strong>Galaxy Store</strong>, which updates its own apps. Its setting is under <span class="path">Galaxy Store › Menu › Settings › Auto update apps</span>.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-chart"/></svg>Which choice is right for you?</h2>
+<div class="table-wrap"><table class="compare">
+  <thead><tr><th></th><th>Automatic</th><th>Wi-Fi only</th><th>Off</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Security fixes</strong></td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> Right away</td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> At the next Wi-Fi</td><td><svg class="icon bad" aria-hidden="true"><use href="#i-cross"/></svg> Only when you remember</td></tr>
+    <tr><td><strong>Mobile data</strong></td><td><svg class="icon bad" aria-hidden="true"><use href="#i-cross"/></svg> Can use a lot</td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> None</td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> You decide</td></tr>
+    <tr><td><strong>Control over changes</strong></td><td><svg class="icon bad" aria-hidden="true"><use href="#i-cross"/></svg> None</td><td><svg class="icon bad" aria-hidden="true"><use href="#i-cross"/></svg> None</td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> Full</td></tr>
+    <tr><td><strong>Effort</strong></td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> None</td><td><svg class="icon ok" aria-hidden="true"><use href="#i-check"/></svg> None</td><td><svg class="icon bad" aria-hidden="true"><use href="#i-cross"/></svg> Regular checks</td></tr>
+  </tbody>
+</table></div>
+<p>Our advice: keep automatic updates on <strong>Wi-Fi only</strong>, and turn them off only for the one or two apps you want to keep as they are. Apps that haven't been updated for a long time miss security fixes.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-update"/></svg>Updating by hand</h2>
+<p>In the Play Store: <span class="path">profile icon › Manage apps & device</span>. Under <em>Updates available</em> you can choose <strong>Update all</strong> or pick apps one by one. If an update keeps failing, check your free space first – see <a href="android-storage-full.html">storage full and updates failing</a>.</p>
+
+<h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-history"/></svg>Automatic updates, but still know what changed</h2>
+<figure class="shot shot-right"><picture><source srcset="../img/guide-history-apk.webp" type="image/webp"><img src="../img/guide-history-apk.png" width="480" height="1066" alt="UpdateMonitor update history per day with old and new version numbers" loading="lazy" decoding="async"></picture><figcaption>UpdateMonitor's history: every update per day, with old and new version.</figcaption></figure>
+<p>The downside of automatic updates is that they happen silently. Android doesn't keep a list of what was updated. UpdateMonitor does: every update with the date, the old and new version, and a shield when an update brought new permissions. So you can leave automatic updates on, and still look back when an app suddenly behaves differently.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq">
+  <details><summary>Is it safe to turn off automatic app updates?</summary><p>It&#x27;s safe as long as you still update regularly by hand. Apps that stay on an old version miss security fixes, so turning updates off for everything isn&#x27;t recommended.</p></details>
+  <details><summary>Why are my apps updating even though I turned auto-update off?</summary><p>Some apps are updated by another store, such as the Galaxy Store on Samsung phones, and Google Play system components update separately. Check the settings of each store.</p></details>
+  <details><summary>Can I go back to an older version of an app?</summary><p>For apps from the Play Store, usually not. Only preinstalled system apps can be reset with “Uninstall updates” in Settings → Apps. Turning off auto-update for that app prevents the next change.</p></details>
+</div>
+
+    <section class="video-block">
+      <div class="video-text">
+        <h2>Watch: UpdateMonitor in 1 minute</h2>
+        <p>A quick tour: the history per day, older updates, the calendar, filters and export. About a minute, with captions.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/0LE4vzGjj98" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Watch on YouTube</a>
+      </div>
+      <div class="yt" data-id="0LE4vzGjj98" data-title="UpdateMonitor in 1 minute"><button type="button" aria-label="Play the video: UpdateMonitor in 1 minute"><picture><source srcset="../img/video-1.webp" type="image/webp"><img src="../img/video-1.jpg" width="540" height="960" alt="UpdateMonitor in 1 minute" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+    </section>
+    <div class="cta">
+      <h2>UpdateMonitor – free for Android</h2>
+      <p>Leave automatic updates on and still know what changed: every update with date, versions and new permissions.</p>
+      <p><a class="play-btn" href="../">See how it works</a></p>
+    </div>
+  </article>
+
+  <section class="card related">
+    <h2>Related guides</h2>
+    <div class="related-grid">
+      <a class="related-card" href="android-app-update-history.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-history"/></svg><span>See which apps were updated</span></a>
+      <a class="related-card" href="app-changed-after-update.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-phone"/></svg><span>An app changed after an update – what changed?</span></a>
+      <a class="related-card" href="android-storage-full.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-storage"/></svg><span>Storage full and app updates failing</span></a>
+    </div>
+    <p class="all-guides"><a href="./">All guides →</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>© 2026 Nordic Appworks • UpdateMonitor</div>
+  <nav>
+    <a href=".././">Home</a>
+    <a href="../guides/">Guides</a>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href=".././#support">Support</a>
+    <a href=".././#contact">Contact</a>
+    <a href="https://rebootmonitor.com/">RebootMonitor</a>
+    <a href="../no/" hreflang="nb" lang="nb">Norsk</a>
+  </nav>
+</footer>
+<script>
+  // Load the YouTube player only after a click (youtube-nocookie); a local file: page opens YouTube instead
+  document.querySelectorAll(".yt").forEach(function (box) {
+    var button = box.querySelector("button");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var id = box.getAttribute("data-id");
+      if (location.protocol === "file:") { window.open("https://youtube.com/shorts/" + id, "_blank", "noopener"); return; }
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = box.getAttribute("data-title");
+      frame.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      box.replaceChildren(frame);
+    });
+  });
+</script>
+</body>
+</html>
