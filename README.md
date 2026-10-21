@@ -29,6 +29,6 @@ The Android app is on its way to Google Play. Made by Nordic Appworks, who also 
 
 A plain static website hosted on GitHub Pages, without analytics or tracking. After a push that changes pages, two GitHub Actions update `lastmod` in `sitemap.xml` and notify Bing about the changed pages.
 
-Found an error on the site? Please [open an issue](https://github.com/vanderlindenno/UpdateMonitor/issues).
+Found an error on the site? Please [open an issue](https://github.com/vanderlindenno/UpdateMonitor-website/issues).
 
 © 2026 Nordic Appworks. All rights reserved.
