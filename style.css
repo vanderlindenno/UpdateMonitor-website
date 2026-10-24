@@ -271,3 +271,12 @@ code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; fon
   .guide-icon { width: 24px; height: 24px; padding: 10px; }
   .access { padding: 14px; gap: 12px; }
 }
+
+/* Live on Google Play: button in the intro, and a secondary button next to it in guides */
+.intro-cta { margin: 18px 0 0; }
+.cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn-secondary {
+  display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 10px; font-weight: 600;
+  text-decoration: none; color: var(--primary); border: 2px solid var(--primary); background: transparent;
+}
+.btn-secondary:hover { background: var(--accent-soft); }
