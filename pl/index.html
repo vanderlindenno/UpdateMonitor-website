@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UpdateMonitor – historia aktualizacji i uprawnień aplikacji Android</title>
+  <meta name="description" content="Sprawdź, które aplikacje na Androidzie zaktualizowano, które mają dostęp do aparatu, mikrofonu lub lokalizacji i które są spoza Sklepu Play. Za darmo, offline.">
+  <link rel="canonical" href="https://updatemonitor.app/pl/">
+  <link rel="alternate" hreflang="en" href="https://updatemonitor.app/">
+  <link rel="alternate" hreflang="nb" href="https://updatemonitor.app/no/">
+  <link rel="alternate" hreflang="nl" href="https://updatemonitor.app/nl/">
+  <link rel="alternate" hreflang="de" href="https://updatemonitor.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://updatemonitor.app/fr/">
+  <link rel="alternate" hreflang="es" href="https://updatemonitor.app/es/">
+  <link rel="alternate" hreflang="pl" href="https://updatemonitor.app/pl/">
+  <link rel="alternate" hreflang="zh-CN" href="https://updatemonitor.app/zh/">
+  <link rel="alternate" hreflang="hi" href="https://updatemonitor.app/hi/">
+  <link rel="alternate" hreflang="ar" href="https://updatemonitor.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://updatemonitor.app/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#283593">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UpdateMonitor – historia aktualizacji i uprawnień aplikacji Android">
+  <meta property="og:description" content="Każda aktualizacja, instalacja i usunięcie aplikacji na Twoim urządzeniu – ze zmianami uprawnień. Bez internetu, reklam i śledzenia.">
+  <meta property="og:url" content="https://updatemonitor.app/pl/">
+  <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "UpdateMonitor",
+    "operatingSystem": "Android 8.0 or later",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Rejestruje każdą aktualizację, instalację i usunięcie aplikacji na urządzeniu z Androidem, pokazuje, które aplikacje mogą używać aparatu, lokalizacji i innych funkcji, oraz oznacza aplikacje zainstalowane spoza Sklepu Play. Działa całkowicie offline.",
+    "url": "https://updatemonitor.app/pl/", "inLanguage": "pl",
+    "installUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "publisher": { "@type": "Organization", "name": "Nordic Appworks" }
+  }
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "UpdateMonitor in 1 minute",
+    "description": "A quick tour: the history per day, older updates, the calendar, filters and export.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-1.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M12S",
+    "contentUrl": "https://youtube.com/shorts/0LE4vzGjj98",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/0LE4vzGjj98"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Which apps can use your camera, microphone or location?",
+    "description": "The Permissions tab: every kind of access, which apps really have it, and since when.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-2.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT50S",
+    "contentUrl": "https://youtube.com/shorts/-YNwwlB9cz0",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/-YNwwlB9cz0"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Get warned about new permissions and apps from outside the Play Store",
+    "description": "The shield for new permissions, the APK label, the filter and the optional warning.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-3.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M16S",
+    "contentUrl": "https://youtube.com/shorts/X3xFkaH3P44",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/X3xFkaH3P44"
+  }
+]
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "UpdateMonitor – see every app change on your Android phone",
+  "description": "A quick tour of UpdateMonitor: update history, who can use your camera, microphone or location, and warnings for new permissions and apps from outside the Play Store.",
+  "thumbnailUrl": "https://updatemonitor.app/img/video-promo.jpg",
+  "uploadDate": "2026-10-08T00:00:00+02:00",
+  "duration": "PT56S",
+  "contentUrl": "https://youtube.com/shorts/Ogi1GAPPjlM",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/Ogi1GAPPjlM"
+}
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://updatemonitor.app/pl/#faq",
+  "inLanguage": "pl",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak sprawdzić, które aplikacje zostały zaktualizowane na telefonie z Androidem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Otwórz UpdateMonitor: pokazuje każdą aktualizację, instalację i usunięcie pogrupowane według dni, ze starą i nową wersją oraz godziną. Historia jest przechowywana na urządzeniu, więc możesz wrócić do wcześniejszych aktualizacji."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak sprawdzić, które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Przegląd uprawnień pokazuje dla każdego uprawnienia, ile aplikacji może z niego korzystać i które to są. Możesz to też sprawdzić w ustawieniach Androida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy UpdateMonitor zbiera moje dane?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nie. Aplikacja w ogóle nie ma uprawnienia do internetu, więc nic nie może opuścić telefonu. Nie ma konta, reklam ani analityki."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak znaleźć aplikacje zainstalowane spoza Sklepu Play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UpdateMonitor oznacza aplikacje, które nie pochodzą ze Sklepu Play, pozwala filtrować według źródła i ostrzega, gdy taka aplikacja zostanie zainstalowana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy UpdateMonitor jest darmowy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak. UpdateMonitor jest bezpłatny, bez reklam i bez konta."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M13,3c-4.97,0 -9,4.03 -9,9L1,12l3.89,3.89 0.07,0.14L9,12L6,12c0,-3.87 3.13,-7 7,-7s7,3.13 7,7 -3.13,7 -7,7c-1.93,0 -3.68,-0.79 -4.94,-2.06l-1.42,1.42C8.27,19.99 10.51,21 13,21c4.97,0 9,-4.03 9,-9s-4.03,-9 -9,-9zM12,8v5l4.28,2.54 0.72,-1.21 -3.5,-2.08L13.5,8L12,8z"/></symbol>
+  <symbol id="i-apps" viewBox="0 0 24 24"><path d="M4,8h4L8,4L4,4v4zM10,20h4v-4h-4v4zM4,20h4v-4L4,16v4zM4,14h4v-4L4,10v4zM10,14h4v-4h-4v4zM16,4v4h4L20,4h-4zM10,8h4L14,4h-4v4zM16,14h4v-4h-4v4zM16,20h4v-4h-4v4z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M18,8h-1V6c0,-2.76 -2.24,-5 -5,-5S7,3.24 7,6v2H6c-1.1,0 -2,0.9 -2,2v10c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V10c0,-1.1 -0.9,-2 -2,-2zM12,17c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2 2,0.9 2,2 -0.9,2 -2,2zM15.1,8H8.9V6c0,-1.71 1.39,-3.1 3.1,-3.1 1.71,0 3.1,1.39 3.1,3.1v2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12,22c1.1,0 2,-0.9 2,-2h-4c0,1.1 0.89,2 2,2zM18,16v-5c0,-3.07 -1.64,-5.64 -4.5,-6.32L13.5,4c0,-0.83 -0.67,-1.5 -1.5,-1.5s-1.5,0.67 -1.5,1.5v0.68C7.63,5.36 6,7.92 6,11v5l-2,2v1h16v-1l-2,-2z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4 3.01,4.9 3.01,6L3,20c0,1.1 0.89,2 2,2h14c1.1,0 2,-0.9 2,-2V6C21,4.9 20.1,4 19,4zM19,20H5V10h14V20zM19,8H5V6h14V8zM9,14H7v-2h2V14zM13,14h-2v-2h2V14zM17,14h-2v-2h2V14zM9,18H7v-2h2V18zM13,18h-2v-2h2V18zM17,18h-2v-2h2V18z"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3,17v2h6v-2L3,17zM3,5v2h10L13,5L3,5zM13,21v-2h8v-2h-8v-2h-2v6h2zM7,9v2L3,11v2h4v2h2L9,9L7,9zM21,13v-2L11,11v2h10zM15,9h2L17,7h4L21,5h-4L17,3h-2v6z"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M19,9h-4V3H9v6H5l7,7 7,-7zM5,18v2h14v-2H5z"/></symbol>
+  <symbol id="i-widget" viewBox="0 0 24 24"><path d="M13,13v8h8v-8h-8zM3,21h8v-8H3v8zM3,3v8h8V3H3zM16.66,1.69L11,7.34 16.66,13l5.66,-5.66 -5.66,-5.65z"/></symbol>
+  <symbol id="i-block" viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM4,12c0,-4.42 3.58,-8 8,-8 1.85,0 3.55,0.63 4.9,1.69L5.69,16.9C4.63,15.55 4,13.85 4,12zM12,20c-1.85,0 -3.55,-0.63 -4.9,-1.69L18.31,7.1C19.37,8.45 20,10.15 20,12c0,4.42 -3.58,8 -8,8z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8,5v14l11,-7z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12L21,5l-9,-4zM12,11.99h7c-0.53,4.12 -3.28,7.79 -7,8.94L12,12L5,12L5,6.3l7,-3.11v8.8z"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24"><path d="M1,21h22L12,2 1,21zM13,18h-2v-2h2v2zM13,14h-2v-4h2v4z"/></symbol>
+  <symbol id="i-storage" viewBox="0 0 24 24"><path d="M2,20h20v-4L2,16v4zM4,17h2v2L4,19v-2zM2,4v4h20L22,4L2,4zM6,7L4,7L4,5h2v2zM2,14h20v-4L2,10v4zM4,11h2v2L4,13v-2z"/></symbol>
+</svg>
+
+<header>
+  <picture>
+    <source media="(max-width:600px)" srcset="/img/header-banner-mobile.webp" type="image/webp" width="440" height="400">
+    <source srcset="/img/header-banner.webp" type="image/webp" width="1600" height="400">
+    <img src="/img/header-banner.png" width="1600" height="400" alt="UpdateMonitor na Androida – historia aktualizacji aplikacji tylko na Twoim urządzeniu" fetchpriority="high">
+  </picture>
+</header>
+<nav class="langbar" aria-label="Język"><a href="https://updatemonitor.app/" hreflang="en" lang="en">English</a><a href="https://updatemonitor.app/no/" hreflang="nb" lang="nb">Norsk</a><a href="https://updatemonitor.app/nl/" hreflang="nl" lang="nl">Nederlands</a><a href="https://updatemonitor.app/de/" hreflang="de" lang="de">Deutsch</a><a href="https://updatemonitor.app/fr/" hreflang="fr" lang="fr">Français</a><a href="https://updatemonitor.app/es/" hreflang="es" lang="es">Español</a><a href="https://updatemonitor.app/pl/" hreflang="pl" lang="pl" aria-current="true">Polski</a><a href="https://updatemonitor.app/zh/" hreflang="zh-CN" lang="zh-CN">中文</a><a href="https://updatemonitor.app/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="https://updatemonitor.app/ar/" hreflang="ar" lang="ar">العربية</a></nav>
+
+<main class="container">
+
+  <section class="card intro-grid"><div class="intro-text">
+    <span class="badge">Za darmo w Google Play</span>
+    <h1>UpdateMonitor – historia aktualizacji aplikacji i kontrola uprawnień na Androida</h1>
+    <p class="tagline">Sprawdź dokładnie, które aplikacje na Twoim telefonie się zmieniły – i kiedy.</p>
+    <p>UpdateMonitor prowadzi przejrzystą historię każdej aktualizacji, nowej instalacji i usunięcia aplikacji na Twoim urządzeniu z Androidem – ze starą i nową wersją, datą i godziną oraz uprawnieniami, które aplikacja zyskała lub straciła. Pokazuje też, które aplikacje mogą używać aparatu, lokalizacji, mikrofonu i innych funkcji, oraz oznacza aplikacje, które nie pochodzą ze Sklepu Play. Wszystko zostaje na urządzeniu: aplikacja w ogóle nie ma uprawnienia do internetu.</p>
+  <p class="intro-cta"><a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Pobierz z Google Play</a></p>
+  </div><aside class="glance" aria-label="W skrócie"><h3>W skrócie</h3><ul><li>Za darmo, bez reklam, bez konta</li><li>Bez uprawnienia do internetu</li><li>Wszystko zostaje na Twoim urządzeniu</li><li>Działa całkowicie offline</li></ul></aside></section>
+
+  <section class="card" id="promo">
+    <div class="video-block promo">
+      <div class="video-text">
+        <h2>Poznaj UpdateMonitor w niecałą minutę</h2>
+        <p>Która aplikacja zmieniła się w nocy? Krótka prezentacja: historia aktualizacji, kto może używać aparatu, mikrofonu lub lokalizacji oraz ostrzeżenia o nowych uprawnieniach i aplikacjach spoza Sklepu Play.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/Ogi1GAPPjlM" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Obejrzyj na YouTube</a>
+      </div>
+      <div class="yt" data-id="Ogi1GAPPjlM" data-title="UpdateMonitor w niecałą minutę"><button type="button" aria-label="Odtwórz film promocyjny UpdateMonitor"><picture><source srcset="/img/video-promo.webp" type="image/webp"><img src="/img/video-promo.jpg" width="540" height="960" alt="UpdateMonitor w niecałą minutę" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Co robi UpdateMonitor?</h2>
+    <div class="features">
+      <div class="feature">
+        <svg class="icon"><use href="#i-history"/></svg>
+        <h3>Historia aktualizacji</h3>
+        <p>Jeden przejrzysty wiersz na aplikację, pogrupowany według dni: z jakiej wersji na jaką, z ikoną aplikacji i godziną. Starsze aktualizacje rozwiniesz jednym dotknięciem.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-apps"/></svg>
+        <h3>Instalacje i usunięcia</h3>
+        <p>Nowe i usunięte aplikacje też są rejestrowane, każda wyraźnie oznaczona.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-lock"/></svg>
+        <h3>Zmiany uprawnień</h3>
+        <p>Mała tarcza pokazuje, kiedy aktualizacja dodaje lub odbiera dostęp do lokalizacji, aparatu, mikrofonu, kontaktów i innych.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-shield"/></svg>
+        <h3>Kto ma dostęp do czego</h3>
+        <p>Dla każdego rodzaju dostępu – aparatu, lokalizacji, mikrofonu i innych – zobaczysz, które aplikacje faktycznie go mają i od kiedy. Specjalny dostęp, np. ułatwienia dostępu, jest pokazany osobno.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-warning"/></svg>
+        <h3>Spoza Sklepu Play</h3>
+        <p>Aplikacje zainstalowane z pliku APK lub z innego sklepu są oznaczane wraz ze źródłem – z własnym filtrem i opcjonalnym powiadomieniem.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-storage"/></svg>
+        <h3>Pamięć w skrócie</h3>
+        <p>Zajęte i wolne miejsce w jednym wierszu oraz zmiana w tym tygodniu. Robi się żółte, gdy telefon jest prawie pełny. Można je ukryć.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-bell"/></svg>
+        <h3>Ostrzeżenia, a nie szum</h3>
+        <p>Opcjonalne i domyślnie wyłączone: powiadomienie tylko wtedy, gdy aplikacja dostaje nowe uprawnienia lub zostaje zainstalowana spoza Sklepu Play. Zwykłe aktualizacje pozostają ciche.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-calendar"/></svg>
+        <h3>Kalendarz aktywności</h3>
+        <p>Miesięczna mapa cieplna pokazuje, w które dni zmieniały się Twoje aplikacje. Dotknij dnia, aby zobaczyć, co się stało.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-filter"/></svg>
+        <h3>Wyszukiwanie i filtry</h3>
+        <p>Szukaj po aplikacji, wersji lub dacie i filtruj według okresu, rodzaju zmiany, źródła lub zmian uprawnień.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-export"/></svg>
+        <h3>Eksport</h3>
+        <p>Udostępnij historię jako arkusz CSV lub raport PDF – przydatne, gdy dział IT pyta, co się zmieniło.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-widget"/></svg>
+        <h3>Widżet</h3>
+        <p>Trzy ostatnie zmiany prosto na ekranie głównym.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-block"/></svg>
+        <h3>100% bez reklam</h3>
+        <p>Bez reklam, śledzenia, konta i analityki. Za darmo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Zrzuty ekranu</h2>
+    <div class="screens">
+      <figure>
+        <picture><source srcset="/img/screen-history.webp" type="image/webp"><img src="/img/screen-history.png" width="600" height="1200" loading="lazy" alt="Historia w UpdateMonitor: jeden wiersz na aplikację, pogrupowany według dni, z oznaczeniami uprawnień i źródła"></picture>
+        <figcaption>Każda zmiana, pogrupowana według dni</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-permissions.webp" type="image/webp"><img src="/img/screen-permissions.png" width="600" height="1200" loading="lazy" alt="Karta Uprawnienia: ile aplikacji może używać lokalizacji, aparatu, mikrofonu i innych"></picture>
+        <figcaption>Kto ma dostęp do czego</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-calendar.webp" type="image/webp"><img src="/img/screen-calendar.png" width="600" height="1200" loading="lazy" alt="Kalendarz aktywności z miesięczną mapą cieplną"></picture>
+        <figcaption>Kalendarz aktywności</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-filter.webp" type="image/webp"><img src="/img/screen-filter.png" width="600" height="1200" loading="lazy" alt="Filtruj według okresu, rodzaju zmiany i źródła"></picture>
+        <figcaption>Filtry</figcaption>
+      </figure>
+    </div>
+    <div class="widget-shot">
+      <picture><source srcset="/img/widget.webp" type="image/webp"><img src="/img/widget.png" width="600" height="336" loading="lazy" alt="Widżet UpdateMonitor na ekranie głównym z ostatnimi zmianami"></picture>
+    </div>
+  </section>
+
+  <section class="card" id="videos">
+    <h2>Zobacz w działaniu</h2>
+    <p>Trzy krótkie filmy, każdy około minuty (z napisami, bez dźwięku).</p>
+    <p class="video-note">Filmy mają angielskie napisy.</p>
+    <div class="videos">
+      <div class="video-item">
+        <div class="yt" data-id="0LE4vzGjj98" data-title="UpdateMonitor w 1 minutę"><button type="button" aria-label="Odtwórz film: UpdateMonitor w 1 minutę"><picture><source srcset="/img/video-1.webp" type="image/webp"><img src="/img/video-1.jpg" width="540" height="960" alt="UpdateMonitor w 1 minutę" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>UpdateMonitor w 1 minutę</h3>
+        <p>Krótka prezentacja: historia według dni, starsze aktualizacje, kalendarz, filtry i eksport.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/0LE4vzGjj98" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Obejrzyj na YouTube</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="-YNwwlB9cz0" data-title="Które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?"><button type="button" aria-label="Odtwórz film: Które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?"><picture><source srcset="/img/video-2.webp" type="image/webp"><img src="/img/video-2.jpg" width="540" height="960" alt="Które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>Które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?</h3>
+        <p>Karta Uprawnienia: każdy rodzaj dostępu, które aplikacje naprawdę go mają i od kiedy.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/-YNwwlB9cz0" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Obejrzyj na YouTube</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="X3xFkaH3P44" data-title="Otrzymuj ostrzeżenia o nowych uprawnieniach i aplikacjach spoza Sklepu Play"><button type="button" aria-label="Odtwórz film: Otrzymuj ostrzeżenia o nowych uprawnieniach i aplikacjach spoza Sklepu Play"><picture><source srcset="/img/video-3.webp" type="image/webp"><img src="/img/video-3.jpg" width="540" height="960" alt="Otrzymuj ostrzeżenia o nowych uprawnieniach i aplikacjach spoza Sklepu Play" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>Otrzymuj ostrzeżenia o nowych uprawnieniach i aplikacjach spoza Sklepu Play</h3>
+        <p>Tarcza przy nowych uprawnieniach, etykieta APK, filtr i opcjonalne ostrzeżenie.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/X3xFkaH3P44" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Obejrzyj na YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="guides">
+    <h2>Poradniki</h2>
+    <p>Krótkie, praktyczne odpowiedzi – z aplikacją lub bez niej:</p>
+    <ul class="guide-links two-cols">
+      <li><a href="/guides/android-app-permissions.html" hreflang="en" lang="en">Which apps can access your camera, microphone or location on Android?<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/apps-using-location-in-background.html" hreflang="en" lang="en">Which apps use your location in the background on Android?<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/android-special-app-access.html" hreflang="en" lang="en">Special app access on Android explained: the 7 most powerful permissions<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/android-app-update-history.html" hreflang="en" lang="en">How to see which apps were updated on your Android phone<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/turn-off-auto-updates-android.html" hreflang="en" lang="en">How to turn automatic app updates off (or on) on Android<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/app-changed-after-update.html" hreflang="en" lang="en">An app looks different after an update – how to find out what changed<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/check-android-security-patch.html" hreflang="en" lang="en">How to check your Android security patch level (and why it matters)<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/find-apps-outside-play-store.html" hreflang="en" lang="en">How to find apps installed outside the Play Store on Android<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/is-it-safe-to-install-apk.html" hreflang="en" lang="en">Is it safe to install an APK file? A checklist for Android<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/android-storage-full.html" hreflang="en" lang="en">Android storage full? What to do – and why app updates fail<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+      <li><a href="/guides/track-app-updates-company-phones.html" hreflang="en" lang="en">How to track app updates on company Android phones (for IT admins)<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a></li>
+    </ul>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h2>Prywatność, którą możesz sprawdzić</h2>
+      <ul class="check-list">
+        <li><strong>Brak uprawnienia do internetu</strong> – aplikacja nie może nigdzie wysłać listy Twoich aplikacji.</li>
+        <li>Bez reklam, analityki, raportowania awarii i zewnętrznych SDK.</li>
+        <li>Bez konta i bez serwerów.</li>
+        <li>Historia jest wyłączona z kopii zapasowej w chmurze i zostaje na tym urządzeniu.</li>
+        <li>Możesz w każdej chwili usunąć wszystko, czyszcząc dane aplikacji lub ją odinstalowując.</li>
+      </ul>
+      <p>Przeczytaj pełną <a href="/privacy.html" hreflang="en">politykę prywatności<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a>.</p>
+    </section>
+    <section class="card">
+      <h2>Uprawnienia</h2>
+      <ul class="perm-list">
+        <li><code>QUERY_ALL_PACKAGES</code> – aby widzieć wszystkie zainstalowane aplikacje, ich wersje i żądane uprawnienia. To podstawa działania aplikacji; ekran powitalny wyjaśnia to, zanim cokolwiek zostanie odczytane.</li>
+        <li><code>POST_NOTIFICATIONS</code> – do ostrzeżeń o nowych uprawnieniach i instalacjach spoza Sklepu Play. Prośba pojawia się dopiero, gdy włączysz ostrzeżenia w ustawieniach aplikacji. Domyślnie wyłączone.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code> – aby cogodzinne sprawdzanie pozostało zaplanowane po ponownym uruchomieniu.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Dlaczego zmiany uprawnień są ważne</h2>
+    <p>Większość aktualizacji aplikacji jest nieszkodliwa. Czasem jednak aktualizacja po cichu prosi o więcej – o Twoją lokalizację, kontakty lub mikrofon. UpdateMonitor zaznacza to od razu w historii małą tarczą i liczbą nowych uprawnień; otwórz aplikację, aby zobaczyć, o które dokładnie chodzi.</p>
+    <p>Karta <strong>Uprawnienia</strong> pokazuje to z drugiej strony: wybierz aparat, lokalizację lub mikrofon i zobacz wszystkie aplikacje z tym dostępem – najnowsze są oznaczone. Możesz też przefiltrować historię, by widzieć tylko aktualizacje ze zmianą uprawnień, a jeśli włączysz powiadomienia – dostać informację, gdy to się stanie.</p>
+  </section>
+
+  <section class="card">
+    <h2>Przydatne dla działu IT</h2>
+    <p>„Wczoraj działało – co się zmieniło?” Z UpdateMonitor odpowiedź masz na jedno dotknięcie. Wyeksportuj historię jako PDF lub CSV i wyślij ją do pomocy technicznej. Aplikacje zainstalowane przez Google Play, portal firmy lub inny instalator są pokazywane ze źródłem, a wszystko spoza Sklepu Play od razu się wyróżnia.</p>
+  </section>
+
+  <section class="card">
+    <h2>Języki i ułatwienia dostępu</h2>
+    <p>Aplikacja jest dostępna w językach: angielskim, norweskim (bokmål), niderlandzkim, niemieckim, francuskim, hiszpańskim, polskim, chińskim (uproszczonym), hindi i arabskim. Działa z TalkBack i dużym rozmiarem tekstu.</p>
+  </section>
+
+  <section class="card faq" id="faq"><h2>Najczęściej zadawane pytania</h2><details><summary>Jak sprawdzić, które aplikacje zostały zaktualizowane na telefonie z Androidem?</summary><p>Otwórz UpdateMonitor: pokazuje każdą aktualizację, instalację i usunięcie pogrupowane według dni, ze starą i nową wersją oraz godziną. Historia jest przechowywana na urządzeniu, więc możesz wrócić do wcześniejszych aktualizacji.</p></details><details><summary>Jak sprawdzić, które aplikacje mogą używać aparatu, mikrofonu lub lokalizacji?</summary><p>Przegląd uprawnień pokazuje dla każdego uprawnienia, ile aplikacji może z niego korzystać i które to są. Możesz to też sprawdzić w ustawieniach Androida.</p></details><details><summary>Czy UpdateMonitor zbiera moje dane?</summary><p>Nie. Aplikacja w ogóle nie ma uprawnienia do internetu, więc nic nie może opuścić telefonu. Nie ma konta, reklam ani analityki.</p></details><details><summary>Jak znaleźć aplikacje zainstalowane spoza Sklepu Play?</summary><p>UpdateMonitor oznacza aplikacje, które nie pochodzą ze Sklepu Play, pozwala filtrować według źródła i ostrzega, gdy taka aplikacja zostanie zainstalowana.</p></details><details><summary>Czy UpdateMonitor jest darmowy?</summary><p>Tak. UpdateMonitor jest bezpłatny, bez reklam i bez konta.</p></details></section>
+
+  <section class="card" id="more-apps"><h2>Więcej aplikacji od Nordic Appworks</h2><p><a href="https://rebootmonitor.com/pl/" hreflang="pl"><strong>RebootMonitor</strong></a> — pokazuje, kiedy urządzenie z Androidem było ostatnio uruchamiane ponownie, z czasem działania, historią restartów i opcjonalnym przypomnieniem o restarcie. Tak jak UpdateMonitor: za darmo, offline i bez reklam. <a href="https://play.google.com/store/apps/details?id=app.rebootmonitor.mobile" target="_blank" rel="noopener">Pobierz z Google Play</a>.</p></section>
+
+  <section class="card play-card">
+    <svg class="icon"><use href="#i-play"/></svg>
+    <div class="play-text">
+      <span class="badge">Za darmo</span>
+      <h2>Pobierz UpdateMonitor z Google Play</h2>
+      <p>UpdateMonitor jest darmowy i działa na Androidzie 8.0 i nowszym.</p>
+    </div>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Pobierz z Google Play</a>
+  </section>
+
+  <section class="card" id="support">
+    <h2>☕ Wesprzyj UpdateMonitor</h2>
+    <p>UpdateMonitor jest w 100% darmowy, bez reklam i subskrypcji. Jeśli aplikacja Ci się przydaje, Twoje wsparcie pomoże sfinansować przyszłe ulepszenia, nowe funkcje i bieżące utrzymanie.</p>
+    <p><a class="coffee-btn" href="https://buymeacoffee.com/updatemonitor" target="_blank" rel="noopener">☕ Postaw mi kawę</a></p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>Skontaktuj się z nami</h2>
+    <p>Masz pytanie lub potrzebujesz pomocy? Napisz do nas, a odpowiemy najszybciej, jak to możliwe.</p>
+    <form class="contact-form" action="https://formspree.io/f/moevdloa" method="POST">
+      <input type="hidden" name="_subject" value="UpdateMonitor website (pl)">
+      <input type="hidden" name="app" value="UpdateMonitor">
+      <label for="email">Twój e-mail</label>
+      <input id="email" type="email" name="email" required autocomplete="email">
+      <label for="message">Twoja wiadomość</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Wyślij</button>
+      <p class="contact-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>© 2026 Nordic Appworks • UpdateMonitor</div>
+  <nav>
+    <a href="https://updatemonitor.app/pl/">Strona główna</a>
+    <a href="/guides/" hreflang="en">Poradniki<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a>
+    <a href="/privacy.html" hreflang="en">Polityka prywatności<span class="en" lang="en" title="Ta strona jest po angielsku">EN</span></a>
+    <a href="#support">Wesprzyj nas</a>
+    <a href="#contact">Kontakt</a>
+    <a href="https://rebootmonitor.com/pl/" hreflang="pl">RebootMonitor</a>
+  </nav>
+</footer>
+
+<script>
+  // Send the contact form without leaving the page; falls back to a normal POST without JavaScript
+  document.querySelector(".contact-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const status = form.querySelector(".contact-status");
+    const button = form.querySelector("button");
+    button.disabled = true;
+    status.className = "contact-status";
+    status.textContent = "Wysyłanie…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+      if (!response.ok) throw new Error(response.status);
+      form.reset();
+      status.classList.add("ok");
+      status.textContent = "Dziękujemy! Wiadomość została wysłana.";
+    } catch (e) {
+      status.classList.add("error");
+      status.textContent = "Przepraszamy, nie udało się wysłać wiadomości. Spróbuj ponownie później.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+<script>
+  // Load the YouTube player only after a click (youtube-nocookie); a local file: page opens YouTube instead
+  document.querySelectorAll(".yt").forEach(function (box) {
+    var button = box.querySelector("button");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var id = box.getAttribute("data-id");
+      if (location.protocol === "file:") { window.open("https://youtube.com/shorts/" + id, "_blank", "noopener"); return; }
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = box.getAttribute("data-title");
+      frame.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      box.replaceChildren(frame);
+    });
+  });
+</script>
+</body>
+</html>

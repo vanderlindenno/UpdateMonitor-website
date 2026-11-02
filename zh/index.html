@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UpdateMonitor – 安卓应用更新历史与权限检查</title>
+  <meta name="description" content="查看哪些安卓应用已更新、哪些应用可以使用相机、麦克风或位置信息，以及哪些来自 Play 商店以外。免费、离线、无广告。">
+  <link rel="canonical" href="https://updatemonitor.app/zh/">
+  <link rel="alternate" hreflang="en" href="https://updatemonitor.app/">
+  <link rel="alternate" hreflang="nb" href="https://updatemonitor.app/no/">
+  <link rel="alternate" hreflang="nl" href="https://updatemonitor.app/nl/">
+  <link rel="alternate" hreflang="de" href="https://updatemonitor.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://updatemonitor.app/fr/">
+  <link rel="alternate" hreflang="es" href="https://updatemonitor.app/es/">
+  <link rel="alternate" hreflang="pl" href="https://updatemonitor.app/pl/">
+  <link rel="alternate" hreflang="zh-CN" href="https://updatemonitor.app/zh/">
+  <link rel="alternate" hreflang="hi" href="https://updatemonitor.app/hi/">
+  <link rel="alternate" hreflang="ar" href="https://updatemonitor.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://updatemonitor.app/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#283593">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UpdateMonitor – 安卓应用更新历史与权限检查">
+  <meta property="og:description" content="设备上的每一次应用更新、安装和移除，以及权限变化。无需联网，无广告，无跟踪。">
+  <meta property="og:url" content="https://updatemonitor.app/zh/">
+  <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/style.css">
+  <style>body{font-family:"Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif}</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "UpdateMonitor",
+    "operatingSystem": "Android 8.0 or later",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "记录 Android 设备上的每一次应用更新、安装和移除，显示哪些应用可以使用你的相机、位置信息等，并标出在 Play 商店以外安装的应用。完全离线运行。",
+    "url": "https://updatemonitor.app/zh/", "inLanguage": "zh-CN",
+    "installUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "publisher": { "@type": "Organization", "name": "Nordic Appworks" }
+  }
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "UpdateMonitor in 1 minute",
+    "description": "A quick tour: the history per day, older updates, the calendar, filters and export.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-1.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M12S",
+    "contentUrl": "https://youtube.com/shorts/0LE4vzGjj98",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/0LE4vzGjj98"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Which apps can use your camera, microphone or location?",
+    "description": "The Permissions tab: every kind of access, which apps really have it, and since when.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-2.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT50S",
+    "contentUrl": "https://youtube.com/shorts/-YNwwlB9cz0",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/-YNwwlB9cz0"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Get warned about new permissions and apps from outside the Play Store",
+    "description": "The shield for new permissions, the APK label, the filter and the optional warning.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-3.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M16S",
+    "contentUrl": "https://youtube.com/shorts/X3xFkaH3P44",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/X3xFkaH3P44"
+  }
+]
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "UpdateMonitor – see every app change on your Android phone",
+  "description": "A quick tour of UpdateMonitor: update history, who can use your camera, microphone or location, and warnings for new permissions and apps from outside the Play Store.",
+  "thumbnailUrl": "https://updatemonitor.app/img/video-promo.jpg",
+  "uploadDate": "2026-10-08T00:00:00+02:00",
+  "duration": "PT56S",
+  "contentUrl": "https://youtube.com/shorts/Ogi1GAPPjlM",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/Ogi1GAPPjlM"
+}
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://updatemonitor.app/zh/#faq",
+  "inLanguage": "zh-CN",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "如何查看 Android 手机上哪些应用更新过？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "打开 UpdateMonitor：它会按天分组列出每一次更新、安装和移除，包括新旧版本和时间。历史记录保存在你的设备上，因此你可以回顾以前的更新。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何查看哪些应用可以使用我的相机、麦克风或位置信息？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "权限概览会针对每项权限显示有多少应用获准使用，以及具体是哪些应用。你也可以在 Android 自带的设置中查看。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UpdateMonitor 会收集我的数据吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不会。本应用完全没有联网权限，因此任何数据都无法离开你的手机。无需账号，没有广告，也没有分析。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何找到在 Play 商店以外安装的应用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UpdateMonitor 会标出不是来自 Play 商店的应用，让你按来源筛选，并在安装此类应用时向你发出警告。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UpdateMonitor 免费吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的。UpdateMonitor 可免费使用，没有广告，无需账号。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M13,3c-4.97,0 -9,4.03 -9,9L1,12l3.89,3.89 0.07,0.14L9,12L6,12c0,-3.87 3.13,-7 7,-7s7,3.13 7,7 -3.13,7 -7,7c-1.93,0 -3.68,-0.79 -4.94,-2.06l-1.42,1.42C8.27,19.99 10.51,21 13,21c4.97,0 9,-4.03 9,-9s-4.03,-9 -9,-9zM12,8v5l4.28,2.54 0.72,-1.21 -3.5,-2.08L13.5,8L12,8z"/></symbol>
+  <symbol id="i-apps" viewBox="0 0 24 24"><path d="M4,8h4L8,4L4,4v4zM10,20h4v-4h-4v4zM4,20h4v-4L4,16v4zM4,14h4v-4L4,10v4zM10,14h4v-4h-4v4zM16,4v4h4L20,4h-4zM10,8h4L14,4h-4v4zM16,14h4v-4h-4v4zM16,20h4v-4h-4v4z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M18,8h-1V6c0,-2.76 -2.24,-5 -5,-5S7,3.24 7,6v2H6c-1.1,0 -2,0.9 -2,2v10c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V10c0,-1.1 -0.9,-2 -2,-2zM12,17c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2 2,0.9 2,2 -0.9,2 -2,2zM15.1,8H8.9V6c0,-1.71 1.39,-3.1 3.1,-3.1 1.71,0 3.1,1.39 3.1,3.1v2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12,22c1.1,0 2,-0.9 2,-2h-4c0,1.1 0.89,2 2,2zM18,16v-5c0,-3.07 -1.64,-5.64 -4.5,-6.32L13.5,4c0,-0.83 -0.67,-1.5 -1.5,-1.5s-1.5,0.67 -1.5,1.5v0.68C7.63,5.36 6,7.92 6,11v5l-2,2v1h16v-1l-2,-2z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4 3.01,4.9 3.01,6L3,20c0,1.1 0.89,2 2,2h14c1.1,0 2,-0.9 2,-2V6C21,4.9 20.1,4 19,4zM19,20H5V10h14V20zM19,8H5V6h14V8zM9,14H7v-2h2V14zM13,14h-2v-2h2V14zM17,14h-2v-2h2V14zM9,18H7v-2h2V18zM13,18h-2v-2h2V18zM17,18h-2v-2h2V18z"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3,17v2h6v-2L3,17zM3,5v2h10L13,5L3,5zM13,21v-2h8v-2h-8v-2h-2v6h2zM7,9v2L3,11v2h4v2h2L9,9L7,9zM21,13v-2L11,11v2h10zM15,9h2L17,7h4L21,5h-4L17,3h-2v6z"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M19,9h-4V3H9v6H5l7,7 7,-7zM5,18v2h14v-2H5z"/></symbol>
+  <symbol id="i-widget" viewBox="0 0 24 24"><path d="M13,13v8h8v-8h-8zM3,21h8v-8H3v8zM3,3v8h8V3H3zM16.66,1.69L11,7.34 16.66,13l5.66,-5.66 -5.66,-5.65z"/></symbol>
+  <symbol id="i-block" viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM4,12c0,-4.42 3.58,-8 8,-8 1.85,0 3.55,0.63 4.9,1.69L5.69,16.9C4.63,15.55 4,13.85 4,12zM12,20c-1.85,0 -3.55,-0.63 -4.9,-1.69L18.31,7.1C19.37,8.45 20,10.15 20,12c0,4.42 -3.58,8 -8,8z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8,5v14l11,-7z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12L21,5l-9,-4zM12,11.99h7c-0.53,4.12 -3.28,7.79 -7,8.94L12,12L5,12L5,6.3l7,-3.11v8.8z"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24"><path d="M1,21h22L12,2 1,21zM13,18h-2v-2h2v2zM13,14h-2v-4h2v4z"/></symbol>
+  <symbol id="i-storage" viewBox="0 0 24 24"><path d="M2,20h20v-4L2,16v4zM4,17h2v2L4,19v-2zM2,4v4h20L22,4L2,4zM6,7L4,7L4,5h2v2zM2,14h20v-4L2,10v4zM4,11h2v2L4,13v-2z"/></symbol>
+</svg>
+
+<header>
+  <picture>
+    <source media="(max-width:600px)" srcset="/img/header-banner-mobile.webp" type="image/webp" width="440" height="400">
+    <source srcset="/img/header-banner.webp" type="image/webp" width="1600" height="400">
+    <img src="/img/header-banner.png" width="1600" height="400" alt="UpdateMonitor Android 版：你的应用更新历史，只保存在你的设备上" fetchpriority="high">
+  </picture>
+</header>
+<nav class="langbar" aria-label="语言"><a href="https://updatemonitor.app/" hreflang="en" lang="en">English</a><a href="https://updatemonitor.app/no/" hreflang="nb" lang="nb">Norsk</a><a href="https://updatemonitor.app/nl/" hreflang="nl" lang="nl">Nederlands</a><a href="https://updatemonitor.app/de/" hreflang="de" lang="de">Deutsch</a><a href="https://updatemonitor.app/fr/" hreflang="fr" lang="fr">Français</a><a href="https://updatemonitor.app/es/" hreflang="es" lang="es">Español</a><a href="https://updatemonitor.app/pl/" hreflang="pl" lang="pl">Polski</a><a href="https://updatemonitor.app/zh/" hreflang="zh-CN" lang="zh-CN" aria-current="true">中文</a><a href="https://updatemonitor.app/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="https://updatemonitor.app/ar/" hreflang="ar" lang="ar">العربية</a></nav>
+
+<main class="container">
+
+  <section class="card intro-grid"><div class="intro-text">
+    <span class="badge">在 Google Play 免费下载</span>
+    <h1>UpdateMonitor：Android 应用更新历史与权限检查工具</h1>
+    <p class="tagline">准确了解手机上哪些应用发生了变化，以及何时变化。</p>
+    <p>UpdateMonitor 清晰记录 Android 设备上的每一次应用更新、新安装和移除，包括新旧版本、日期和时间，以及应用获得或失去了哪些权限。它还会显示哪些应用可以使用你的相机、位置信息、麦克风等，并标出不是来自 Play 商店的应用。所有数据都保留在你的设备上：本应用完全没有联网权限。</p>
+  <p class="intro-cta"><a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 立即在 Google Play 获取</a></p>
+  </div><aside class="glance" aria-label="一览"><h3>一览</h3><ul><li>免费、无广告、无需账号</li><li>无联网权限</li><li>所有数据都保留在你的设备上</li><li>完全离线运行</li></ul></aside></section>
+
+  <section class="card" id="promo">
+    <div class="video-block promo">
+      <div class="video-text">
+        <h2>一分钟内了解 UpdateMonitor</h2>
+        <p>哪个应用在夜里发生了变化？快速浏览：更新历史、谁能使用你的相机、麦克风或位置信息，以及有关新权限和 Play 商店以外应用的警告。</p>
+        <a class="play-btn" href="https://youtube.com/shorts/Ogi1GAPPjlM" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 在 YouTube 上观看</a>
+      </div>
+      <div class="yt" data-id="Ogi1GAPPjlM" data-title="一分钟内了解 UpdateMonitor"><button type="button" aria-label="播放 UpdateMonitor 宣传视频"><picture><source srcset="/img/video-promo.webp" type="image/webp"><img src="/img/video-promo.jpg" width="540" height="960" alt="一分钟内了解 UpdateMonitor" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>UpdateMonitor 能做什么？</h2>
+    <div class="features">
+      <div class="feature">
+        <svg class="icon"><use href="#i-history"/></svg>
+        <h3>更新历史</h3>
+        <p>每个应用一行，按天分组：从哪个版本更新到哪个版本，并显示应用自己的图标和时间。轻点一下即可展开较早的更新。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-apps"/></svg>
+        <h3>安装与移除</h3>
+        <p>新安装和已移除的应用也会被记录，并清楚标明。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-lock"/></svg>
+        <h3>权限变化</h3>
+        <p>小盾牌图标会标出某次更新新增或移除了对位置信息、相机、麦克风、通讯录等的访问权限。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-shield"/></svg>
+        <h3>谁能访问什么</h3>
+        <p>针对每种访问权限（相机、位置信息、麦克风等），查看哪些应用真正拥有它以及从何时开始。无障碍等特殊应用权限会单独列出。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-warning"/></svg>
+        <h3>Play 商店以外</h3>
+        <p>通过 APK 文件或其他应用商店安装的应用会标出其来源，并配有专门的筛选条件和可选通知。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-storage"/></svg>
+        <h3>存储空间一目了然</h3>
+        <p>一行显示已用和可用空间，以及本周的变化。手机存储空间快满时会变成黄色。可以隐藏。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-bell"/></svg>
+        <h3>只有警告，没有噪音</h3>
+        <p>可选，默认关闭：仅当应用获得新权限或在 Play 商店以外安装时才发送通知。普通更新不会打扰你。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-calendar"/></svg>
+        <h3>活动日历</h3>
+        <p>月度热力图显示你的应用在哪些日子发生了变化。点按某一天即可查看当天发生了什么。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-filter"/></svg>
+        <h3>搜索与筛选</h3>
+        <p>按应用、版本或日期搜索，并按时间段、变化类型、来源或权限变化筛选。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-export"/></svg>
+        <h3>导出</h3>
+        <p>将历史记录分享为 CSV 电子表格或 PDF 报告，IT 支持问起有什么变化时非常方便。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-widget"/></svg>
+        <h3>小部件</h3>
+        <p>在主屏幕上直接查看最近的三项变化。</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-block"/></svg>
+        <h3>100% 无广告</h3>
+        <p>没有广告、没有跟踪、无需账号、没有分析。免费使用。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>屏幕截图</h2>
+    <div class="screens">
+      <figure>
+        <picture><source srcset="/img/screen-history.webp" type="image/webp"><img src="/img/screen-history.png" width="600" height="1200" loading="lazy" alt="UpdateMonitor 历史记录：每个应用一行，按天分组，并显示权限和来源标记"></picture>
+        <figcaption>每一项变化，按天分组</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-permissions.webp" type="image/webp"><img src="/img/screen-permissions.png" width="600" height="1200" loading="lazy" alt="“权限”标签页：有多少应用可以使用位置信息、相机、麦克风等"></picture>
+        <figcaption>谁能访问什么</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-calendar.webp" type="image/webp"><img src="/img/screen-calendar.png" width="600" height="1200" loading="lazy" alt="带月度热力图的活动日历"></picture>
+        <figcaption>活动日历</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-filter.webp" type="image/webp"><img src="/img/screen-filter.png" width="600" height="1200" loading="lazy" alt="按时间段、变化类型和来源筛选"></picture>
+        <figcaption>筛选</figcaption>
+      </figure>
+    </div>
+    <div class="widget-shot">
+      <picture><source srcset="/img/widget.webp" type="image/webp"><img src="/img/widget.png" width="600" height="336" loading="lazy" alt="显示最近变化的 UpdateMonitor 主屏幕小部件"></picture>
+    </div>
+  </section>
+
+  <section class="card" id="videos">
+    <h2>实际演示</h2>
+    <p>三段短视频，每段约一分钟（有字幕，无声音）。</p>
+    <p class="video-note">视频配有英文字幕。</p>
+    <div class="videos">
+      <div class="video-item">
+        <div class="yt" data-id="0LE4vzGjj98" data-title="1 分钟了解 UpdateMonitor"><button type="button" aria-label="播放视频：1 分钟了解 UpdateMonitor"><picture><source srcset="/img/video-1.webp" type="image/webp"><img src="/img/video-1.jpg" width="540" height="960" alt="1 分钟了解 UpdateMonitor" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>1 分钟了解 UpdateMonitor</h3>
+        <p>快速浏览：按天显示的历史记录、较早的更新、日历、筛选和导出。</p>
+        <a class="play-btn" href="https://youtube.com/shorts/0LE4vzGjj98" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 在 YouTube 上观看</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="-YNwwlB9cz0" data-title="哪些应用可以使用你的相机、麦克风或位置信息？"><button type="button" aria-label="播放视频：哪些应用可以使用你的相机、麦克风或位置信息？"><picture><source srcset="/img/video-2.webp" type="image/webp"><img src="/img/video-2.jpg" width="540" height="960" alt="哪些应用可以使用你的相机、麦克风或位置信息？" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>哪些应用可以使用你的相机、麦克风或位置信息？</h3>
+        <p>“权限”标签页：每种访问权限、真正拥有它的应用，以及从何时开始。</p>
+        <a class="play-btn" href="https://youtube.com/shorts/-YNwwlB9cz0" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 在 YouTube 上观看</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="X3xFkaH3P44" data-title="出现新权限和 Play 商店以外的应用时收到警告"><button type="button" aria-label="播放视频：出现新权限和 Play 商店以外的应用时收到警告"><picture><source srcset="/img/video-3.webp" type="image/webp"><img src="/img/video-3.jpg" width="540" height="960" alt="出现新权限和 Play 商店以外的应用时收到警告" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>出现新权限和 Play 商店以外的应用时收到警告</h3>
+        <p>新权限的盾牌图标、APK 标签、筛选条件和可选警告。</p>
+        <a class="play-btn" href="https://youtube.com/shorts/X3xFkaH3P44" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 在 YouTube 上观看</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="guides">
+    <h2>指南</h2>
+    <p>简短实用的解答，无论是否使用本应用：</p>
+    <ul class="guide-links two-cols">
+      <li><a href="/guides/android-app-permissions.html" hreflang="en" lang="en">Which apps can access your camera, microphone or location on Android?<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/apps-using-location-in-background.html" hreflang="en" lang="en">Which apps use your location in the background on Android?<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/android-special-app-access.html" hreflang="en" lang="en">Special app access on Android explained: the 7 most powerful permissions<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/android-app-update-history.html" hreflang="en" lang="en">How to see which apps were updated on your Android phone<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/turn-off-auto-updates-android.html" hreflang="en" lang="en">How to turn automatic app updates off (or on) on Android<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/app-changed-after-update.html" hreflang="en" lang="en">An app looks different after an update – how to find out what changed<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/check-android-security-patch.html" hreflang="en" lang="en">How to check your Android security patch level (and why it matters)<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/find-apps-outside-play-store.html" hreflang="en" lang="en">How to find apps installed outside the Play Store on Android<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/is-it-safe-to-install-apk.html" hreflang="en" lang="en">Is it safe to install an APK file? A checklist for Android<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/android-storage-full.html" hreflang="en" lang="en">Android storage full? What to do – and why app updates fail<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+      <li><a href="/guides/track-app-updates-company-phones.html" hreflang="en" lang="en">How to track app updates on company Android phones (for IT admins)<span class="en" lang="en" title="此页面为英文">EN</span></a></li>
+    </ul>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h2>可以自行核实的隐私</h2>
+      <ul class="check-list">
+        <li><strong>无联网权限</strong>：本应用无法把你的应用列表发送到任何地方。</li>
+        <li>没有广告、没有分析、没有崩溃报告，也没有第三方 SDK。</li>
+        <li>无需账号，没有服务器。</li>
+        <li>你的历史记录不会包含在云备份中，只保留在此设备上。</li>
+        <li>随时可以通过清除应用数据或卸载应用来删除所有内容。</li>
+      </ul>
+      <p>阅读完整的<a href="/privacy.html" hreflang="en">隐私权政策<span class="en" lang="en" title="此页面为英文">EN</span></a>。</p>
+    </section>
+    <section class="card">
+      <h2>权限</h2>
+      <ul class="perm-list">
+        <li><code>QUERY_ALL_PACKAGES</code>：用于查看所有已安装的应用、其版本及所请求的权限。这是本应用的核心功能；在读取任何内容之前，欢迎屏幕会先说明这一点。</li>
+        <li><code>POST_NOTIFICATIONS</code>：用于发送有关新权限和 Play 商店以外安装的警告。只有当你在应用设置中开启警告时才会请求。默认关闭。</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code>：用于在设备重启后继续保持每小时一次的检查。</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>为什么权限变化很重要</h2>
+    <p>大多数应用更新都是无害的。但有时，某次更新会悄悄索取更多权限，比如你的位置信息、通讯录或麦克风。UpdateMonitor 会直接在历史记录中用小盾牌图标和新权限数量标出这一点；打开应用即可查看具体是哪些权限。</p>
+    <p><strong>权限</strong>标签页则换个角度：选择相机、位置信息或麦克风，即可看到拥有该权限的所有应用，并标出最新获得权限的应用。你还可以筛选历史记录，只显示权限有变化的更新；如果开启通知，发生这种情况时还会提醒你。</p>
+  </section>
+
+  <section class="card">
+    <h2>对 IT 支持很有用</h2>
+    <p>“昨天还好好的，到底改了什么？”有了 UpdateMonitor，轻点一下就能找到答案。将历史记录导出为 PDF 或 CSV，并分享给你的技术支持人员。通过 Google Play、公司门户或其他安装程序安装的应用都会显示其来源，Play 商店以外的应用则会被突出显示。</p>
+  </section>
+
+  <section class="card">
+    <h2>语言与无障碍</h2>
+    <p>本应用支持英语、挪威语（博克马尔语）、荷兰语、德语、法语、西班牙语、波兰语、简体中文、印地语和阿拉伯语。支持 TalkBack 和大字体。</p>
+  </section>
+
+  <section class="card faq" id="faq"><h2>常见问题</h2><details><summary>如何查看 Android 手机上哪些应用更新过？</summary><p>打开 UpdateMonitor：它会按天分组列出每一次更新、安装和移除，包括新旧版本和时间。历史记录保存在你的设备上，因此你可以回顾以前的更新。</p></details><details><summary>如何查看哪些应用可以使用我的相机、麦克风或位置信息？</summary><p>权限概览会针对每项权限显示有多少应用获准使用，以及具体是哪些应用。你也可以在 Android 自带的设置中查看。</p></details><details><summary>UpdateMonitor 会收集我的数据吗？</summary><p>不会。本应用完全没有联网权限，因此任何数据都无法离开你的手机。无需账号，没有广告，也没有分析。</p></details><details><summary>如何找到在 Play 商店以外安装的应用？</summary><p>UpdateMonitor 会标出不是来自 Play 商店的应用，让你按来源筛选，并在安装此类应用时向你发出警告。</p></details><details><summary>UpdateMonitor 免费吗？</summary><p>是的。UpdateMonitor 可免费使用，没有广告，无需账号。</p></details></section>
+
+  <section class="card" id="more-apps"><h2>Nordic Appworks 的更多应用</h2><p><a href="https://rebootmonitor.com/zh/" hreflang="zh-CN"><strong>RebootMonitor</strong></a>：显示你的 Android 设备上次重启的时间，并提供运行时长、重启历史和可选的重启提醒。与 UpdateMonitor 一样：免费、离线、无广告。<a href="https://play.google.com/store/apps/details?id=app.rebootmonitor.mobile" target="_blank" rel="noopener">立即在 Google Play 获取</a>。</p></section>
+
+  <section class="card play-card">
+    <svg class="icon"><use href="#i-play"/></svg>
+    <div class="play-text">
+      <span class="badge">免费</span>
+      <h2>在 Google Play 获取 UpdateMonitor</h2>
+      <p>UpdateMonitor 免费，适用于 Android 8.0 及更高版本。</p>
+    </div>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> 立即在 Google Play 获取</a>
+  </section>
+
+  <section class="card" id="support">
+    <h2>☕ 支持 UpdateMonitor</h2>
+    <p>UpdateMonitor 完全免费，没有广告，也没有订阅。如果你觉得这款应用有用，你的支持将帮助我们持续改进、开发新功能并进行日常维护。</p>
+    <p><a class="coffee-btn" href="https://buymeacoffee.com/updatemonitor" target="_blank" rel="noopener">☕ 请我喝杯咖啡</a></p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>联系我们</h2>
+    <p>有问题或需要帮助？给我们发消息，我们会尽快回复你。</p>
+    <form class="contact-form" action="https://formspree.io/f/moevdloa" method="POST">
+      <input type="hidden" name="_subject" value="UpdateMonitor website (zh)">
+      <input type="hidden" name="app" value="UpdateMonitor">
+      <label for="email">你的电子邮箱</label>
+      <input id="email" type="email" name="email" required autocomplete="email">
+      <label for="message">你的留言</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">发送</button>
+      <p class="contact-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>© 2026 Nordic Appworks • UpdateMonitor</div>
+  <nav>
+    <a href="https://updatemonitor.app/zh/">首页</a>
+    <a href="/guides/" hreflang="en">指南<span class="en" lang="en" title="此页面为英文">EN</span></a>
+    <a href="/privacy.html" hreflang="en">隐私权政策<span class="en" lang="en" title="此页面为英文">EN</span></a>
+    <a href="#support">支持我们</a>
+    <a href="#contact">联系</a>
+    <a href="https://rebootmonitor.com/zh/" hreflang="zh-CN">RebootMonitor</a>
+  </nav>
+</footer>
+
+<script>
+  // Send the contact form without leaving the page; falls back to a normal POST without JavaScript
+  document.querySelector(".contact-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const status = form.querySelector(".contact-status");
+    const button = form.querySelector("button");
+    button.disabled = true;
+    status.className = "contact-status";
+    status.textContent = "正在发送…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+      if (!response.ok) throw new Error(response.status);
+      form.reset();
+      status.classList.add("ok");
+      status.textContent = "谢谢！你的消息已发送。";
+    } catch (e) {
+      status.classList.add("error");
+      status.textContent = "抱歉，消息未能发送。请稍后再试。";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+<script>
+  // Load the YouTube player only after a click (youtube-nocookie); a local file: page opens YouTube instead
+  document.querySelectorAll(".yt").forEach(function (box) {
+    var button = box.querySelector("button");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var id = box.getAttribute("data-id");
+      if (location.protocol === "file:") { window.open("https://youtube.com/shorts/" + id, "_blank", "noopener"); return; }
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = box.getAttribute("data-title");
+      frame.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      box.replaceChildren(frame);
+    });
+  });
+</script>
+</body>
+</html>

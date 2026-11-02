@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UpdateMonitor – app-updategeschiedenis &amp; machtigingen (Android)</title>
+  <meta name="description" content="Zie welke Android-apps zijn geüpdatet, welke je camera, microfoon of locatie mogen gebruiken en welke buiten de Play Store komen. Gratis, offline, geen reclame.">
+  <link rel="canonical" href="https://updatemonitor.app/nl/">
+  <link rel="alternate" hreflang="en" href="https://updatemonitor.app/">
+  <link rel="alternate" hreflang="nb" href="https://updatemonitor.app/no/">
+  <link rel="alternate" hreflang="nl" href="https://updatemonitor.app/nl/">
+  <link rel="alternate" hreflang="de" href="https://updatemonitor.app/de/">
+  <link rel="alternate" hreflang="fr" href="https://updatemonitor.app/fr/">
+  <link rel="alternate" hreflang="es" href="https://updatemonitor.app/es/">
+  <link rel="alternate" hreflang="pl" href="https://updatemonitor.app/pl/">
+  <link rel="alternate" hreflang="zh-CN" href="https://updatemonitor.app/zh/">
+  <link rel="alternate" hreflang="hi" href="https://updatemonitor.app/hi/">
+  <link rel="alternate" hreflang="ar" href="https://updatemonitor.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://updatemonitor.app/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#283593">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UpdateMonitor – app-updategeschiedenis &amp; machtigingen (Android)">
+  <meta property="og:description" content="Elke app-update, installatie en verwijdering op je toestel – met gewijzigde rechten. Geen internet, geen advertenties, geen tracking.">
+  <meta property="og:url" content="https://updatemonitor.app/nl/">
+  <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "UpdateMonitor",
+    "operatingSystem": "Android 8.0 or later",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Registreert elke app-update, installatie en verwijdering op je Android-toestel, laat zien welke apps je camera, locatie en meer mogen gebruiken, en markeert apps van buiten de Play Store. Werkt volledig offline.",
+    "url": "https://updatemonitor.app/nl/", "inLanguage": "nl",
+    "installUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=app.updatemonitor.mobile",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "publisher": { "@type": "Organization", "name": "Nordic Appworks" }
+  }
+  </script>
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "UpdateMonitor in 1 minute",
+    "description": "A quick tour: the history per day, older updates, the calendar, filters and export.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-1.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M12S",
+    "contentUrl": "https://youtube.com/shorts/0LE4vzGjj98",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/0LE4vzGjj98"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Which apps can use your camera, microphone or location?",
+    "description": "The Permissions tab: every kind of access, which apps really have it, and since when.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-2.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT50S",
+    "contentUrl": "https://youtube.com/shorts/-YNwwlB9cz0",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/-YNwwlB9cz0"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Get warned about new permissions and apps from outside the Play Store",
+    "description": "The shield for new permissions, the APK label, the filter and the optional warning.",
+    "thumbnailUrl": "https://updatemonitor.app/img/video-3.jpg",
+    "uploadDate": "2026-10-08T00:00:00+02:00",
+    "duration": "PT1M16S",
+    "contentUrl": "https://youtube.com/shorts/X3xFkaH3P44",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/X3xFkaH3P44"
+  }
+]
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "UpdateMonitor – see every app change on your Android phone",
+  "description": "A quick tour of UpdateMonitor: update history, who can use your camera, microphone or location, and warnings for new permissions and apps from outside the Play Store.",
+  "thumbnailUrl": "https://updatemonitor.app/img/video-promo.jpg",
+  "uploadDate": "2026-10-08T00:00:00+02:00",
+  "duration": "PT56S",
+  "contentUrl": "https://youtube.com/shorts/Ogi1GAPPjlM",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/Ogi1GAPPjlM"
+}
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://updatemonitor.app/nl/#faq",
+  "inLanguage": "nl",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe zie ik welke apps er op mijn Android-telefoon zijn geüpdatet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open UpdateMonitor: elke update, installatie en verwijdering staat erin, gegroepeerd per dag, met de oude en nieuwe versie en de tijd. De geschiedenis wordt op je toestel bewaard, dus je kunt ook eerdere updates terugzien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe zie ik welke apps mijn camera, microfoon of locatie mogen gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het overzicht van rechten (app-machtigingen) toont per recht hoeveel apps het mogen gebruiken en welke apps dat zijn. Je kunt dit ook bekijken in de instellingen van Android zelf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Verzamelt UpdateMonitor mijn gegevens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. De app heeft helemaal geen internettoegang, dus er kan niets van je telefoon af. Er is geen account, er zijn geen advertenties en er is geen analyse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe vind ik apps die buiten de Play Store zijn geïnstalleerd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UpdateMonitor markeert apps die niet uit de Play Store komen, laat je filteren op bron en waarschuwt je als zo’n app wordt geïnstalleerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is UpdateMonitor gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. UpdateMonitor is gratis te gebruiken, zonder advertenties en zonder account."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M13,3c-4.97,0 -9,4.03 -9,9L1,12l3.89,3.89 0.07,0.14L9,12L6,12c0,-3.87 3.13,-7 7,-7s7,3.13 7,7 -3.13,7 -7,7c-1.93,0 -3.68,-0.79 -4.94,-2.06l-1.42,1.42C8.27,19.99 10.51,21 13,21c4.97,0 9,-4.03 9,-9s-4.03,-9 -9,-9zM12,8v5l4.28,2.54 0.72,-1.21 -3.5,-2.08L13.5,8L12,8z"/></symbol>
+  <symbol id="i-apps" viewBox="0 0 24 24"><path d="M4,8h4L8,4L4,4v4zM10,20h4v-4h-4v4zM4,20h4v-4L4,16v4zM4,14h4v-4L4,10v4zM10,14h4v-4h-4v4zM16,4v4h4L20,4h-4zM10,8h4L14,4h-4v4zM16,14h4v-4h-4v4zM16,20h4v-4h-4v4z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M18,8h-1V6c0,-2.76 -2.24,-5 -5,-5S7,3.24 7,6v2H6c-1.1,0 -2,0.9 -2,2v10c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V10c0,-1.1 -0.9,-2 -2,-2zM12,17c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2 2,0.9 2,2 -0.9,2 -2,2zM15.1,8H8.9V6c0,-1.71 1.39,-3.1 3.1,-3.1 1.71,0 3.1,1.39 3.1,3.1v2z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12,22c1.1,0 2,-0.9 2,-2h-4c0,1.1 0.89,2 2,2zM18,16v-5c0,-3.07 -1.64,-5.64 -4.5,-6.32L13.5,4c0,-0.83 -0.67,-1.5 -1.5,-1.5s-1.5,0.67 -1.5,1.5v0.68C7.63,5.36 6,7.92 6,11v5l-2,2v1h16v-1l-2,-2z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4 3.01,4.9 3.01,6L3,20c0,1.1 0.89,2 2,2h14c1.1,0 2,-0.9 2,-2V6C21,4.9 20.1,4 19,4zM19,20H5V10h14V20zM19,8H5V6h14V8zM9,14H7v-2h2V14zM13,14h-2v-2h2V14zM17,14h-2v-2h2V14zM9,18H7v-2h2V18zM13,18h-2v-2h2V18zM17,18h-2v-2h2V18z"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3,17v2h6v-2L3,17zM3,5v2h10L13,5L3,5zM13,21v-2h8v-2h-8v-2h-2v6h2zM7,9v2L3,11v2h4v2h2L9,9L7,9zM21,13v-2L11,11v2h10zM15,9h2L17,7h4L21,5h-4L17,3h-2v6z"/></symbol>
+  <symbol id="i-export" viewBox="0 0 24 24"><path d="M19,9h-4V3H9v6H5l7,7 7,-7zM5,18v2h14v-2H5z"/></symbol>
+  <symbol id="i-widget" viewBox="0 0 24 24"><path d="M13,13v8h8v-8h-8zM3,21h8v-8H3v8zM3,3v8h8V3H3zM16.66,1.69L11,7.34 16.66,13l5.66,-5.66 -5.66,-5.65z"/></symbol>
+  <symbol id="i-block" viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM4,12c0,-4.42 3.58,-8 8,-8 1.85,0 3.55,0.63 4.9,1.69L5.69,16.9C4.63,15.55 4,13.85 4,12zM12,20c-1.85,0 -3.55,-0.63 -4.9,-1.69L18.31,7.1C19.37,8.45 20,10.15 20,12c0,4.42 -3.58,8 -8,8z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8,5v14l11,-7z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12L21,5l-9,-4zM12,11.99h7c-0.53,4.12 -3.28,7.79 -7,8.94L12,12L5,12L5,6.3l7,-3.11v8.8z"/></symbol>
+  <symbol id="i-warning" viewBox="0 0 24 24"><path d="M1,21h22L12,2 1,21zM13,18h-2v-2h2v2zM13,14h-2v-4h2v4z"/></symbol>
+  <symbol id="i-storage" viewBox="0 0 24 24"><path d="M2,20h20v-4L2,16v4zM4,17h2v2L4,19v-2zM2,4v4h20L22,4L2,4zM6,7L4,7L4,5h2v2zM2,14h20v-4L2,10v4zM4,11h2v2L4,13v-2z"/></symbol>
+</svg>
+
+<header>
+  <picture>
+    <source media="(max-width:600px)" srcset="/img/header-banner-mobile.webp" type="image/webp" width="440" height="400">
+    <source srcset="/img/header-banner.webp" type="image/webp" width="1600" height="400">
+    <img src="/img/header-banner.png" width="1600" height="400" alt="UpdateMonitor voor Android – je app-updategeschiedenis, alleen op je eigen toestel" fetchpriority="high">
+  </picture>
+</header>
+<nav class="langbar" aria-label="Taal"><a href="https://updatemonitor.app/" hreflang="en" lang="en">English</a><a href="https://updatemonitor.app/no/" hreflang="nb" lang="nb">Norsk</a><a href="https://updatemonitor.app/nl/" hreflang="nl" lang="nl" aria-current="true">Nederlands</a><a href="https://updatemonitor.app/de/" hreflang="de" lang="de">Deutsch</a><a href="https://updatemonitor.app/fr/" hreflang="fr" lang="fr">Français</a><a href="https://updatemonitor.app/es/" hreflang="es" lang="es">Español</a><a href="https://updatemonitor.app/pl/" hreflang="pl" lang="pl">Polski</a><a href="https://updatemonitor.app/zh/" hreflang="zh-CN" lang="zh-CN">中文</a><a href="https://updatemonitor.app/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="https://updatemonitor.app/ar/" hreflang="ar" lang="ar">العربية</a></nav>
+
+<main class="container">
+
+  <section class="card intro-grid"><div class="intro-text">
+    <span class="badge">Gratis op Google Play</span>
+    <h1>UpdateMonitor – app-updategeschiedenis en rechtencontrole voor Android</h1>
+    <p class="tagline">Weet precies welke apps er op je telefoon zijn veranderd, en wanneer.</p>
+    <p>UpdateMonitor houdt een overzichtelijke geschiedenis bij van elke app-update, nieuwe installatie en verwijdering op je Android-toestel – met de oude en nieuwe versie, de datum en tijd, en welke rechten een app erbij kreeg of kwijtraakte. De app laat ook zien welke apps je camera, locatie, microfoon en meer mogen gebruiken, en markeert apps die niet uit de Play Store komen. Alles blijft op je toestel: de app heeft helemaal geen internettoegang.</p>
+  <p class="intro-cta"><a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Download via Google Play</a></p>
+  </div><aside class="glance" aria-label="In één oogopslag"><h3>In één oogopslag</h3><ul><li>Gratis, geen advertenties, geen account</li><li>Geen internettoegang</li><li>Alles blijft op je toestel</li><li>Werkt volledig offline</li></ul></aside></section>
+
+  <section class="card" id="promo">
+    <div class="video-block promo">
+      <div class="video-text">
+        <h2>UpdateMonitor in minder dan een minuut</h2>
+        <p>Welke app is er vannacht veranderd? Een korte rondleiding: de updategeschiedenis, wie je camera, microfoon of locatie mag gebruiken, en waarschuwingen voor nieuwe rechten en apps van buiten de Play Store.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/Ogi1GAPPjlM" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Bekijk op YouTube</a>
+      </div>
+      <div class="yt" data-id="Ogi1GAPPjlM" data-title="UpdateMonitor in minder dan een minuut"><button type="button" aria-label="Speel de promovideo van UpdateMonitor af"><picture><source srcset="/img/video-promo.webp" type="image/webp"><img src="/img/video-promo.jpg" width="540" height="960" alt="UpdateMonitor in minder dan een minuut" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Wat doet UpdateMonitor?</h2>
+    <div class="features">
+      <div class="feature">
+        <svg class="icon"><use href="#i-history"/></svg>
+        <h3>Updategeschiedenis</h3>
+        <p>Eén overzichtelijke regel per app, gegroepeerd per dag: van welke versie naar welke, met het eigen icoon van de app en de tijd. Oudere updates klap je uit met één tik.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-apps"/></svg>
+        <h3>Installaties &amp; verwijderingen</h3>
+        <p>Nieuwe en verwijderde apps worden ook geregistreerd, elk duidelijk gemarkeerd.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-lock"/></svg>
+        <h3>Gewijzigde rechten</h3>
+        <p>Een klein schild laat zien wanneer een update toegang tot je locatie, camera, microfoon, contacten en meer toevoegt of weghaalt.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-shield"/></svg>
+        <h3>Wie heeft toegang tot wat</h3>
+        <p>Zie per soort toegang – camera, locatie, microfoon en meer – welke apps die echt hebben, en sinds wanneer. Speciale toegang zoals toegankelijkheid staat apart vermeld.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-warning"/></svg>
+        <h3>Buiten de Play Store</h3>
+        <p>Apps die via een APK-bestand of een andere store zijn geïnstalleerd, worden gemarkeerd met hun bron, met een eigen filter en een optionele melding.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-storage"/></svg>
+        <h3>Opslag in één oogopslag</h3>
+        <p>Gebruikte en vrije ruimte op één regel, en hoeveel dat deze week veranderde. Wordt geel als je telefoon bijna vol is. Kan worden verborgen.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-bell"/></svg>
+        <h3>Waarschuwingen, geen ruis</h3>
+        <p>Optioneel en standaard uit: alleen een melding als een app nieuwe rechten krijgt of buiten de Play Store wordt geïnstalleerd. Gewone updates blijven stil.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-calendar"/></svg>
+        <h3>Activiteitenkalender</h3>
+        <p>Een maandelijkse heatmap laat zien op welke dagen je apps veranderden. Tik op een dag om te zien wat er gebeurde.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-filter"/></svg>
+        <h3>Zoeken &amp; filteren</h3>
+        <p>Zoek op app, versie of datum, en filter op periode, soort wijziging, bron of gewijzigde rechten.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-export"/></svg>
+        <h3>Exporteren</h3>
+        <p>Deel je geschiedenis als CSV-spreadsheet of PDF-rapport – handig als de IT-afdeling vraagt wat er is veranderd.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-widget"/></svg>
+        <h3>Widget</h3>
+        <p>De laatste drie wijzigingen direct op je startscherm.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon"><use href="#i-block"/></svg>
+        <h3>100% reclamevrij</h3>
+        <p>Geen advertenties, geen tracking, geen account en geen analyse. Gratis te gebruiken.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Screenshots</h2>
+    <div class="screens">
+      <figure>
+        <picture><source srcset="/img/screen-history.webp" type="image/webp"><img src="/img/screen-history.png" width="600" height="1200" loading="lazy" alt="Geschiedenis in UpdateMonitor: één regel per app, gegroepeerd per dag, met signalen voor rechten en bron"></picture>
+        <figcaption>Elke wijziging, gegroepeerd per dag</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-permissions.webp" type="image/webp"><img src="/img/screen-permissions.png" width="600" height="1200" loading="lazy" alt="Tabblad Rechten: hoeveel apps je locatie, camera, microfoon en meer mogen gebruiken"></picture>
+        <figcaption>Wie heeft toegang tot wat</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-calendar.webp" type="image/webp"><img src="/img/screen-calendar.png" width="600" height="1200" loading="lazy" alt="Activiteitenkalender met een maandelijkse heatmap"></picture>
+        <figcaption>Activiteitenkalender</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="/img/screen-filter.webp" type="image/webp"><img src="/img/screen-filter.png" width="600" height="1200" loading="lazy" alt="Filter op periode, soort wijziging en bron"></picture>
+        <figcaption>Filters</figcaption>
+      </figure>
+    </div>
+    <div class="widget-shot">
+      <picture><source srcset="/img/widget.webp" type="image/webp"><img src="/img/widget.png" width="600" height="336" loading="lazy" alt="Widget van UpdateMonitor op het startscherm met de laatste wijzigingen"></picture>
+    </div>
+  </section>
+
+  <section class="card" id="videos">
+    <h2>Zie het in actie</h2>
+    <p>Drie korte video’s van ongeveer een minuut (ondertiteld, zonder geluid).</p>
+    <p class="video-note">De video’s hebben Engelse ondertitels.</p>
+    <div class="videos">
+      <div class="video-item">
+        <div class="yt" data-id="0LE4vzGjj98" data-title="UpdateMonitor in 1 minuut"><button type="button" aria-label="Speel de video af: UpdateMonitor in 1 minuut"><picture><source srcset="/img/video-1.webp" type="image/webp"><img src="/img/video-1.jpg" width="540" height="960" alt="UpdateMonitor in 1 minuut" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>UpdateMonitor in 1 minuut</h3>
+        <p>Een korte rondleiding: de geschiedenis per dag, oudere updates, de kalender, filters en exporteren.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/0LE4vzGjj98" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Bekijk op YouTube</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="-YNwwlB9cz0" data-title="Welke apps mogen je camera, microfoon of locatie gebruiken?"><button type="button" aria-label="Speel de video af: Welke apps mogen je camera, microfoon of locatie gebruiken?"><picture><source srcset="/img/video-2.webp" type="image/webp"><img src="/img/video-2.jpg" width="540" height="960" alt="Welke apps mogen je camera, microfoon of locatie gebruiken?" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>Welke apps mogen je camera, microfoon of locatie gebruiken?</h3>
+        <p>Het tabblad Rechten: elke soort toegang, welke apps die echt hebben, en sinds wanneer.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/-YNwwlB9cz0" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Bekijk op YouTube</a>
+      </div>
+      <div class="video-item">
+        <div class="yt" data-id="X3xFkaH3P44" data-title="Word gewaarschuwd bij nieuwe rechten en apps van buiten de Play Store"><button type="button" aria-label="Speel de video af: Word gewaarschuwd bij nieuwe rechten en apps van buiten de Play Store"><picture><source srcset="/img/video-3.webp" type="image/webp"><img src="/img/video-3.jpg" width="540" height="960" alt="Word gewaarschuwd bij nieuwe rechten en apps van buiten de Play Store" loading="lazy" decoding="async"></picture><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.8v16.4a1 1 0 0 0 1.5.9l13-8.2a1 1 0 0 0 0-1.7l-13-8.2A1 1 0 0 0 6 3.8z"/></svg></span></button></div>
+        <h3>Word gewaarschuwd bij nieuwe rechten en apps van buiten de Play Store</h3>
+        <p>Het schild voor nieuwe rechten, het APK-label, het filter en de optionele waarschuwing.</p>
+        <a class="play-btn" href="https://youtube.com/shorts/X3xFkaH3P44" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Bekijk op YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="guides">
+    <h2>Handleidingen</h2>
+    <p>Korte, praktische antwoorden – met of zonder de app:</p>
+    <ul class="guide-links two-cols">
+      <li><a href="/guides/android-app-permissions.html" hreflang="en" lang="en">Which apps can access your camera, microphone or location on Android?<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/apps-using-location-in-background.html" hreflang="en" lang="en">Which apps use your location in the background on Android?<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/android-special-app-access.html" hreflang="en" lang="en">Special app access on Android explained: the 7 most powerful permissions<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/android-app-update-history.html" hreflang="en" lang="en">How to see which apps were updated on your Android phone<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/turn-off-auto-updates-android.html" hreflang="en" lang="en">How to turn automatic app updates off (or on) on Android<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/app-changed-after-update.html" hreflang="en" lang="en">An app looks different after an update – how to find out what changed<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/check-android-security-patch.html" hreflang="en" lang="en">How to check your Android security patch level (and why it matters)<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/find-apps-outside-play-store.html" hreflang="en" lang="en">How to find apps installed outside the Play Store on Android<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/is-it-safe-to-install-apk.html" hreflang="en" lang="en">Is it safe to install an APK file? A checklist for Android<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/android-storage-full.html" hreflang="en" lang="en">Android storage full? What to do – and why app updates fail<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+      <li><a href="/guides/track-app-updates-company-phones.html" hreflang="en" lang="en">How to track app updates on company Android phones (for IT admins)<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a></li>
+    </ul>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h2>Privacy die je kunt controleren</h2>
+      <ul class="check-list">
+        <li><strong>Geen internettoegang</strong> – de app kan je app-lijst nergens naartoe sturen.</li>
+        <li>Geen advertenties, geen analyse, geen crashrapportage, geen SDK’s van derden.</li>
+        <li>Geen account en geen servers.</li>
+        <li>Je geschiedenis wordt uitgesloten van cloudback-ups en blijft op dit toestel.</li>
+        <li>Wis alles wanneer je wilt door de app-gegevens te wissen of de app te verwijderen.</li>
+      </ul>
+      <p>Lees het volledige <a href="/privacy.html" hreflang="en">privacybeleid<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a>.</p>
+    </section>
+    <section class="card">
+      <h2>Rechten</h2>
+      <ul class="perm-list">
+        <li><code>QUERY_ALL_PACKAGES</code> – om alle geïnstalleerde apps, hun versies en gevraagde rechten te zien. Dit is de kern van de app; het welkomstscherm legt het uit voordat er iets wordt gelezen.</li>
+        <li><code>POST_NOTIFICATIONS</code> – voor waarschuwingen over nieuwe rechten en installaties buiten de Play Store. Wordt alleen gevraagd als je waarschuwingen aanzet in de instellingen van de app. Standaard uit.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code> – om de controle elk uur ingepland te houden na een herstart.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Waarom gewijzigde rechten ertoe doen</h2>
+    <p>De meeste app-updates zijn onschuldig. Maar soms vraagt een update ongemerkt om meer – je locatie, je contacten of je microfoon. UpdateMonitor markeert dat direct in de geschiedenis met een klein schild en het aantal nieuwe rechten; open de app om precies te zien welke.</p>
+    <p>Het tabblad <strong>Rechten</strong> draait het om: kies camera, locatie of microfoon en zie elke app die die toegang heeft, met de nieuwste gemarkeerd. Je kunt de geschiedenis ook filteren op alleen updates met gewijzigde rechten, en – als je meldingen aanzet – een seintje krijgen wanneer het gebeurt.</p>
+  </section>
+
+  <section class="card">
+    <h2>Handig voor IT-support</h2>
+    <p>‘Gisteren werkte het nog – wat is er veranderd?’ Met UpdateMonitor heb je het antwoord met één tik. Exporteer de geschiedenis als PDF of CSV en deel die met je helpdesk. Apps die via Google Play, een bedrijfsportal of een ander installatieprogramma zijn geïnstalleerd, worden met hun bron getoond, en alles van buiten de Play Store valt op.</p>
+  </section>
+
+  <section class="card">
+    <h2>Talen en toegankelijkheid</h2>
+    <p>De app is beschikbaar in het Engels, Noors (Bokmål), Nederlands, Duits, Frans, Spaans, Pools, Chinees (vereenvoudigd), Hindi en Arabisch. Hij werkt met TalkBack en grote tekst.</p>
+  </section>
+
+  <section class="card faq" id="faq"><h2>Veelgestelde vragen</h2><details><summary>Hoe zie ik welke apps er op mijn Android-telefoon zijn geüpdatet?</summary><p>Open UpdateMonitor: elke update, installatie en verwijdering staat erin, gegroepeerd per dag, met de oude en nieuwe versie en de tijd. De geschiedenis wordt op je toestel bewaard, dus je kunt ook eerdere updates terugzien.</p></details><details><summary>Hoe zie ik welke apps mijn camera, microfoon of locatie mogen gebruiken?</summary><p>Het overzicht van rechten (app-machtigingen) toont per recht hoeveel apps het mogen gebruiken en welke apps dat zijn. Je kunt dit ook bekijken in de instellingen van Android zelf.</p></details><details><summary>Verzamelt UpdateMonitor mijn gegevens?</summary><p>Nee. De app heeft helemaal geen internettoegang, dus er kan niets van je telefoon af. Er is geen account, er zijn geen advertenties en er is geen analyse.</p></details><details><summary>Hoe vind ik apps die buiten de Play Store zijn geïnstalleerd?</summary><p>UpdateMonitor markeert apps die niet uit de Play Store komen, laat je filteren op bron en waarschuwt je als zo’n app wordt geïnstalleerd.</p></details><details><summary>Is UpdateMonitor gratis?</summary><p>Ja. UpdateMonitor is gratis te gebruiken, zonder advertenties en zonder account.</p></details></section>
+
+  <section class="card" id="more-apps"><h2>Meer apps van Nordic Appworks</h2><p><a href="https://rebootmonitor.com/nl/" hreflang="nl"><strong>RebootMonitor</strong></a> — laat zien wanneer je Android-toestel voor het laatst opnieuw is opgestart, met uptime, herstartgeschiedenis en een optionele herinnering om opnieuw op te starten. Net als UpdateMonitor: gratis, offline en zonder advertenties. <a href="https://play.google.com/store/apps/details?id=app.rebootmonitor.mobile" target="_blank" rel="noopener">Download via Google Play</a>.</p></section>
+
+  <section class="card play-card">
+    <svg class="icon"><use href="#i-play"/></svg>
+    <div class="play-text">
+      <span class="badge">Gratis</span>
+      <h2>Download UpdateMonitor via Google Play</h2>
+      <p>UpdateMonitor is gratis en werkt op Android 8.0 en hoger.</p>
+    </div>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=app.updatemonitor.mobile" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Download via Google Play</a>
+  </section>
+
+  <section class="card" id="support">
+    <h2>☕ Steun UpdateMonitor</h2>
+    <p>UpdateMonitor is 100% gratis, reclamevrij en heeft geen abonnementen. Vind je de app handig? Met je steun help je toekomstige verbeteringen, nieuwe functies en doorlopend onderhoud mogelijk te maken.</p>
+    <p><a class="coffee-btn" href="https://buymeacoffee.com/updatemonitor" target="_blank" rel="noopener">☕ Trakteer me op een koffie</a></p>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>Contact</h2>
+    <p>Heb je een vraag of hulp nodig? Stuur ons een bericht, dan reageren we zo snel mogelijk.</p>
+    <form class="contact-form" action="https://formspree.io/f/moevdloa" method="POST">
+      <input type="hidden" name="_subject" value="UpdateMonitor website (nl)">
+      <input type="hidden" name="app" value="UpdateMonitor">
+      <label for="email">Je e-mailadres</label>
+      <input id="email" type="email" name="email" required autocomplete="email">
+      <label for="message">Je bericht</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Versturen</button>
+      <p class="contact-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>© 2026 Nordic Appworks • UpdateMonitor</div>
+  <nav>
+    <a href="https://updatemonitor.app/nl/">Home</a>
+    <a href="/guides/" hreflang="en">Handleidingen<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a>
+    <a href="/privacy.html" hreflang="en">Privacybeleid<span class="en" lang="en" title="Deze pagina is in het Engels">EN</span></a>
+    <a href="#support">Support</a>
+    <a href="#contact">Contact</a>
+    <a href="https://rebootmonitor.com/nl/" hreflang="nl">RebootMonitor</a>
+  </nav>
+</footer>
+
+<script>
+  // Send the contact form without leaving the page; falls back to a normal POST without JavaScript
+  document.querySelector(".contact-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const status = form.querySelector(".contact-status");
+    const button = form.querySelector("button");
+    button.disabled = true;
+    status.className = "contact-status";
+    status.textContent = "Versturen…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+      if (!response.ok) throw new Error(response.status);
+      form.reset();
+      status.classList.add("ok");
+      status.textContent = "Bedankt! Je bericht is verstuurd.";
+    } catch (e) {
+      status.classList.add("error");
+      status.textContent = "Sorry, het bericht kon niet worden verstuurd. Probeer het later opnieuw.";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+<script>
+  // Load the YouTube player only after a click (youtube-nocookie); a local file: page opens YouTube instead
+  document.querySelectorAll(".yt").forEach(function (box) {
+    var button = box.querySelector("button");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var id = box.getAttribute("data-id");
+      if (location.protocol === "file:") { window.open("https://youtube.com/shorts/" + id, "_blank", "noopener"); return; }
+      var frame = document.createElement("iframe");
+      frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+      frame.title = box.getAttribute("data-title");
+      frame.allow = "accelerometer; autoplay; encrypted-media; picture-in-picture";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      box.replaceChildren(frame);
+    });
+  });
+</script>
+</body>
+</html>

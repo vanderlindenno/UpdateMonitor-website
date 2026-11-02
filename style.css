@@ -280,3 +280,15 @@ code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; fon
   text-decoration: none; color: var(--primary); border: 2px solid var(--primary); background: transparent;
 }
 .btn-secondary:hover { background: var(--accent-soft); }
+
+/* Language bar under the header, and the EN mark on links to English-only pages */
+.langbar { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 4px; background: #fff; border-bottom: 1px solid var(--border);
+  padding: 4px 10px; font-size: 14px; line-height: 1.2; }
+.langbar a { color: var(--primary-dark); text-decoration: none; padding: 12px 10px; border-radius: 6px; }
+.langbar a:hover { background: var(--accent-soft); }
+.langbar a[aria-current] { font-weight: 700; background: var(--accent-soft); }
+.en { display: inline-block; margin-inline-start: 5px; padding: 0 4px; font-size: 10px; font-weight: 700; line-height: 16px; letter-spacing: .3px;
+  color: var(--primary-dark); border: 1px solid #9fa8da; border-radius: 4px; vertical-align: middle; text-decoration: none; }
+.footer .en { color: #fff; border-color: rgba(255, 255, 255, .6); }
+.video-note { color: var(--muted); font-size: 14px; margin: -6px 0 18px; }
+@media (max-width: 600px) { .langbar { padding: 2px 6px; font-size: 13px; } .langbar a { padding: 11px 8px; } }
