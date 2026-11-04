@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>How to track app updates on company Android phones (for IT admins) | UpdateMonitor</title>
-  <meta name="description" content="For IT admins: how to track app updates and new permissions on company Android phones – with Android Enterprise / MDM, and a privacy-friendly option without device management.">
+  <title>Track app updates on company Android phones (IT admins)</title>
+  <meta name="description" content="For IT admins: track app updates and new permissions on company Android phones, with Android Enterprise or a privacy-friendly option without MDM.">
   <link rel="canonical" href="https://updatemonitor.app/guides/track-app-updates-company-phones.html">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon.png" type="image/png">
   <meta name="theme-color" content="#283593">
   <meta property="og:type" content="article">
   <meta property="og:title" content="How to track app updates on company Android phones (for IT admins)">
-  <meta property="og:description" content="For IT admins: how to track app updates and new permissions on company Android phones – with Android Enterprise / MDM, and a privacy-friendly option without device management.">
+  <meta property="og:description" content="For IT admins: track app updates and new permissions on company Android phones, with Android Enterprise or a privacy-friendly option without MDM.">
   <meta property="og:url" content="https://updatemonitor.app/guides/track-app-updates-company-phones.html">
   <meta property="og:image" content="https://updatemonitor.app/img/og-image.png">
   <link rel="stylesheet" href="../style.css">
@@ -21,7 +21,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "How to track app updates on company Android phones (for IT admins)",
-    "description": "For IT admins: how to track app updates and new permissions on company Android phones – with Android Enterprise / MDM, and a privacy-friendly option without device management.",
+    "description": "For IT admins: track app updates and new permissions on company Android phones, with Android Enterprise or a privacy-friendly option without MDM.",
     "image": "https://updatemonitor.app/img/og-image.png",
     "datePublished": "2026-10-17",
     "dateModified": "2026-10-17",
@@ -124,6 +124,8 @@
 <ul class="checks yes"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>App inventory</strong> per device, with installed versions.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Update policies</strong>: update automatically, only on Wi-Fi or while charging, or postpone updates for a while.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Approved apps only</strong>: block installs from unknown sources in the work profile.</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Permission policies</strong>: grant or deny permissions centrally.</span></li></ul>
 <p>Limits: the inventory shows the <em>current</em> state, not always a history of changes; personal apps on a BYOD phone (outside the work profile) are deliberately invisible to IT; and a full MDM is a big step for a small organisation.</p>
 
+<p class="note">Using Intune? You can also set UpdateMonitor itself centrally – warnings on, storage overview on or off, and the settings button hidden – with an app configuration policy. See <a href="intune-app-configuration.html">Configure UpdateMonitor with an Intune app configuration policy</a>.</p>
+
 <h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-phone"/></svg>Option 2: without device management</h2>
 <p>Many small organisations, schools and clubs hand out phones without an MDM. Then you depend on what the user can show you – and Android itself keeps no update history.</p>
 <figure class="shot shot-right"><picture><source srcset="../img/guide-warnings-settings.webp" type="image/webp"><img src="../img/guide-warnings-settings.png" width="460" height="1075" alt="UpdateMonitor settings with warnings for new permissions and apps installed outside the Play Store" loading="lazy" decoding="async"></picture><figcaption>Warnings for new permissions and for installs outside the Play Store.</figcaption></figure>
@@ -179,7 +181,7 @@
     <div class="related-grid">
       <a class="related-card" href="android-app-update-history.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-history"/></svg><span>See which apps were updated</span></a>
       <a class="related-card" href="find-apps-outside-play-store.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-download"/></svg><span>Find apps installed outside the Play Store</span></a>
-      <a class="related-card" href="check-android-security-patch.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-shield"/></svg><span>Check your Android security patch level</span></a>
+      <a class="related-card" href="intune-app-configuration.html"><svg class="icon related-icon" aria-hidden="true"><use href="#i-lock"/></svg><span>Configure UpdateMonitor with Intune</span></a>
     </div>
     <p class="all-guides"><a href="./">All guides →</a></p>
   </section>

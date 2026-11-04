@@ -292,3 +292,9 @@ code { background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; fon
 .footer .en { color: #fff; border-color: rgba(255, 255, 255, .6); }
 .video-note { color: var(--muted); font-size: 14px; margin: -6px 0 18px; }
 @media (max-width: 600px) { .langbar { padding: 2px 6px; font-size: 13px; } .langbar a { padding: 11px 8px; } }
+
+/* Wide screenshot (admin consoles) and code blocks */
+.shot-wide { max-width: 100%; margin: 18px 0 22px; clear: both; }
+.shot-wide img { border-radius: 10px; box-shadow: 0 4px 16px rgba(0, 0, 0, .14); border: 1px solid var(--border); }
+pre.code { background: #1f2230; color: #e8eaf6; border-radius: 12px; padding: 16px 18px; overflow-x: auto; font-size: 13.5px; line-height: 1.5; }
+pre.code code { background: none; padding: 0; color: inherit; font-size: inherit; }
