@@ -148,6 +148,17 @@
   </tbody>
 </table></div>
 
+<h2 id="pilot"><svg class="icon h-icon" aria-hidden="true"><use href="#i-shield"/></svg>Test first, then roll out</h2>
+<p>No two Android phones behave exactly alike. Device makers adapt Android in their own way, and battery saving and work profiles affect what an app can see. We test UpdateMonitor on several Android versions, but we can't test every phone in your organisation. So before you roll it out to everyone, start small:</p>
+<ol class="steps">
+  <li><strong>Pick a pilot group</strong>: a few phones of each model and Android version you use, ideally with users who are happy to give feedback.</li>
+  <li><strong>Check the history</strong>: update an app on each pilot phone and check that the update shows up in UpdateMonitor, with the old and new version.</li>
+  <li><strong>Check the warnings</strong>: if you use them, grant an app a new permission and check that the warning arrives.</li>
+  <li><strong>Test your policy</strong>: with Intune, assign your app configuration policy and license key to the pilot group first, and check that the app looks the way you intended.</li>
+  <li><strong>Roll out in stages</strong>, group by group, and keep the pilot group to test again after a major Android update.</li>
+</ol>
+<p class="note">Something not working on a particular model? Send us the phone model and Android version through the <a href="../#contact">contact form</a> and we'll look into it. Testing before a full rollout is also part of our <a href="../terms.html">terms of service</a>.</p>
+
 <h2><svg class="icon h-icon" aria-hidden="true"><use href="#i-lock"/></svg>Privacy: why this works for BYOD</h2>
 <p>UpdateMonitor has <strong>no internet permission</strong>. Nothing is sent to IT, to us, or to anyone else; the history stays on the phone. The user decides what to share, and when. That makes it acceptable on personal phones where a full MDM would be too intrusive – and it's free, without ads or tracking.</p>
 
